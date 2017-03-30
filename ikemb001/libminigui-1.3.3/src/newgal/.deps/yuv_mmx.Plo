@@ -1,0 +1,1 @@
+yuv_mmx.lo yuv_mmx.o: yuv_mmx.c

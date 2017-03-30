@@ -1,0 +1,8 @@
+CC=gcc
+CFLAGS= -Wall -I /usr/local/arm/3.4.1/include -L /usr/local/arm/3.4.1/lib
+
+hex2bin:hex2bin.c
+	$(CC) $(CFLAGS) -o $@ $<
+clean:
+	rm -f *.o
+	rm -f hex2bin

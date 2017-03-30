@@ -1,0 +1,15 @@
+diff --exclude CVS -uNr u-boot-1.1.6/include/configs/MPC8313ERDB.h u-boot-1.1.6.modified/include/configs/MPC8313ERDB.h
+--- u-boot-1.1.6/include/configs/MPC8313ERDB.h	2007-07-01 10:16:28.000000000 -0400
++++ u-boot-1.1.6.modified/include/configs/MPC8313ERDB.h	2007-07-03 16:04:01.000000000 -0400
+@@ -58,6 +58,11 @@
+ #endif
+ #endif
+ 
++/* System performance */
++#define CFG_ACR_PIPE_DEP	3	/* Arbiter pipeline depth (0-3) */
++#define CFG_ACR_RPTCNT		3	/* Arbiter repeat count (0-7) */
++#define CFG_SPCR_TSEC1EP	3	/* eTSEC emergency priority (0-3) */
++
+ #define CFG_SCCR		( SCCR_RES \
+ 				| SCCR_TSEC1CM_1	\
+ 				| SCCR_TSEC1ON		\

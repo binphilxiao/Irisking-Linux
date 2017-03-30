@@ -1,0 +1,1 @@
+#define USE_FEATURE_MTAB_SUPPORT(...)  __VA_ARGS__

@@ -1,0 +1,6 @@
+#define UTS_VERSION "#0.1.4 Sat Jun 2 10:23:22 CST 2007"
+#define VIVI_COMPILE_TIME "10:23:22"
+#define VIVI_COMPILE_BY "root"
+#define VIVI_COMPILE_HOST "debian"
+#define VIVI_COMPILE_DOMAIN "localdomain"
+#define VIVI_COMPILER "gcc version 2.95.3 20010315 (release)"

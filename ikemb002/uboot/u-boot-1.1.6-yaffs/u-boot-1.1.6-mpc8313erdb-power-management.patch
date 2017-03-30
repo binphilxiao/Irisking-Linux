@@ -1,0 +1,87 @@
+From 2d6f183976e8acc92151700e82f9d99e74968e55 Mon Sep 17 00:00:00 2001
+From: lil <tony.li@freescale.com>
+Date: Wed, 11 Apr 2007 14:32:43 +0800
+Subject: [PATCH] Add Power Managemnet support. This feature has board level issue.
+Need a special workaroud here.Should be disabled in default.
+---
+ board/mpc8313erdb/mpc8313erdb.c |    7 +++++++
+ board/mpc8313erdb/sdram.c       |   29 ++++++++++++++++++++++++++++-
+ 2 files changed, 35 insertions(+), 1 deletions(-)
+
+diff --git a/board/mpc8313erdb/mpc8313erdb.c b/board/mpc8313erdb/mpc8313erdb.c
+index eb9cc75..7e68f76 100644
+--- a/board/mpc8313erdb/mpc8313erdb.c
++++ b/board/mpc8313erdb/mpc8313erdb.c
+@@ -40,6 +40,13 @@
+ 
+ int board_early_init_f(void)
+ {
++#ifdef CONFIG_PM
++	DECLARE_GLOBAL_DATA_PTR;
++	volatile immap_t *im = (immap_t *)CFG_IMMR;
++	
++	if (im->pmc.pmccr1 & PMCCR1_POWER_OFF)
++		gd->flags |= GD_FLG_SILENT;
++#endif
+ 	return 0;
+ }
+ 
+diff --git a/board/mpc8313erdb/sdram.c b/board/mpc8313erdb/sdram.c
+index 406d9da..112e1ff 100644
+--- a/board/mpc8313erdb/sdram.c
++++ b/board/mpc8313erdb/sdram.c
+@@ -71,6 +71,23 @@ long int initdram(int board_type)
+ 	return (msize * 1024 * 1024);
+ }
+ 
++#ifdef CONFIG_PM
++static void resume_from_s3(void)
++{
++	DECLARE_GLOBAL_DATA_PTR;
++	u32 magic = *(u32 *)0;
++
++	typedef void (*func_t)(void);
++	func_t resume = *(func_t *)4;
++
++	if (magic == 0xf5153ae5)
++		resume();
++
++	gd->flags &= ~GD_FLG_SILENT;
++	puts("\nS3 Resume failed: bad magic word\n");
++}
++#endif
++
+ #if !defined(CONFIG_SPD_EEPROM)
+ /*************************************************************************
+  *  fixed sdram init -- doesn't use serial presence detect.
+@@ -112,7 +129,14 @@ int fixed_sdram(void)
+ 	im->ddr.timing_cfg_1 = CFG_DDR_TIMING_1;
+ 	im->ddr.timing_cfg_2 = CFG_DDR_TIMING_2;
+ 	im->ddr.timing_cfg_0 = CFG_DDR_TIMING_0;
++#ifdef CONFIG_PM
++	if (im->pmc.pmccr1 & PMCCR1_POWER_OFF)
++		im->ddr.sdram_cfg = CFG_SDRAM_CFG | SDRAM_CFG_BI;
++	else
++		im->ddr.sdram_cfg = CFG_SDRAM_CFG;
++#else
+ 	im->ddr.sdram_cfg = CFG_SDRAM_CFG;
++#endif
+ 	im->ddr.sdram_cfg2 = CFG_SDRAM_CFG2;
+ 	im->ddr.sdram_mode = CFG_DDR_MODE;
+ 	im->ddr.sdram_mode_2 = CFG_DDR_MODE_2;
+@@ -122,8 +146,11 @@ int fixed_sdram(void)
+ 
+ 	/* enable DDR controller */
+ 	im->ddr.sdram_cfg |= SDRAM_CFG_MEM_EN;
++#ifdef CONFIG_PM
++	if (im->pmc.pmccr1 & PMCCR1_POWER_OFF)
++		resume_from_s3();
++#endif
+ #endif
+-		
+ 	return msize;
+ }
+ #endif /*!CFG_SPD_EEPROM */
+-- 
+1.5.0
+

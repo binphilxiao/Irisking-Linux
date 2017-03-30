@@ -1,0 +1,3 @@
+ifeq (-I/root/xiao/arm/s3c2410_vivi_r1.1/include -I/usr/local/arm/2.95.3/include -Wall -Wstrict-prototypes -O2 -fPIC -fomit-frame-pointer -mapcs-32 -mshort-load-bytes -msoft-float,$(strip $(subst $(comma),:,$(CFLAGS) $(EXTRA_CFLAGS) $(CFLAGS_load_file.o))))
+FILES_FLAGS_UP_TO_DATE += load_file.o
+endif

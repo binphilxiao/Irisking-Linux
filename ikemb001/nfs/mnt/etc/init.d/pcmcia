@@ -1,0 +1,96 @@
+#!/bin/sh
+
+CORE_OPTS=
+PCIC=i82365
+PCIC_OPTS=
+
+cleanup()
+{
+  while read SN CLASS MOD INST DEV EXTRA ; do
+    if [ "$SN" != "Socket" ] ; then
+	/etc/pcmcia/$CLASS stop $DEV 2> /dev/null
+    fi
+  done
+}
+
+if [ $# -lt 1 ] ; then break ; fi
+action=$*
+
+case "$action" in
+
+start)
+    echo -n "Starting PCMCIA services:"
+    if [ -d /var/lib/pcmcia ] ; then
+        RUN=/var/lib/pcmcia
+    else
+        RUN=/var/run
+    fi
+    grep -q pcmcia /proc/devices
+    if [ $? -ne 0 ] ; then
+        if [ -d /lib/modules/preferred ] ; then
+            PC=/lib/modules/preferred/pcmcia
+        else
+            PC=/lib/modules/`uname -r`/pcmcia
+        fi
+        if [ -d $PC ] ; then
+            echo -n " modules"
+            /sbin/insmod $PC/pcmcia_core.o $CORE_OPTS
+            /sbin/insmod $PC/$PCIC.o $PCIC_OPTS
+            /sbin/insmod $PC/ds.o
+        else
+            echo " module directory $PC not found."
+            break
+        fi
+    fi
+    if [ -s /var/run/cardmgr.pid ] && \
+        kill -0 `cat /var/run/cardmgr.pid` 2>/dev/null ; then
+        echo " cardmgr is already running."
+    else
+        if [ -r $RUN/stab ] ; then
+            cat $RUN/stab | cleanup
+        fi
+        echo " cardmgr."
+        /sbin/cardmgr $CARDMGR_OPTS
+    fi
+    ;;
+
+stop)
+    echo -n "Shutting down PCMCIA services:"
+    if [ -s /var/run/cardmgr.pid ] ; then
+        PID=`cat /var/run/cardmgr.pid`
+        kill $PID
+        echo -n " cardmgr"
+        # Give cardmgr a few seconds to handle the signal
+        kill -0 $PID 2>/dev/null && sleep 2 && \
+        # Give cardmgr a few seconds to handle the signal
+        kill -0 $PID 2>/dev/null && sleep 2 && \
+        kill -0 $PID 2>/dev/null && sleep 2 && \
+        kill -0 $PID 2>/dev/null && sleep 2 && \
+        kill -0 $PID 2>/dev/null
+    fi
+    if grep -q "ds  " /proc/modules ; then
+        echo -n " modules"
+        /sbin/rmmod ds
+        /sbin/rmmod $PCIC
+        /sbin/rmmod pcmcia_core
+    fi
+    echo "."
+    EXITCODE=0
+    ;;
+
+status)
+    pid=`pidof cardmgr`
+    if [ "$pid" != "" ] ; then
+        echo "cardmgr (pid $pid) is running..."
+        EXITCODE=0
+    else
+        echo "cardmgr is stopped"
+        EXITCODE=3
+    fi
+    ;;
+
+*)
+    echo "no args..."
+    ;;
+
+esac

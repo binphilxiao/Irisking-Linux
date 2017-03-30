@@ -1,0 +1,1 @@
+cmd_mailutils/lib.a := rm -f mailutils/lib.a; /opt/crosstool/gcc-4.1.0-glibc-2.3.6/powerpc-603-linux-gnu/bin/powerpc-603-linux-gnu-ar  rcs mailutils/lib.a mailutils/mail.o mailutils/mime.o mailutils/popmaildir.o mailutils/sendmail.o

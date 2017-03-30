@@ -1,0 +1,1 @@
+cmd_editors/lib.a := rm -f editors/lib.a; /opt/crosstool/gcc-4.1.0-glibc-2.3.6/powerpc-603-linux-gnu/bin/powerpc-603-linux-gnu-ar  rcs editors/lib.a editors/awk.o editors/cmp.o editors/diff.o editors/ed.o editors/patch.o editors/sed.o editors/vi.o

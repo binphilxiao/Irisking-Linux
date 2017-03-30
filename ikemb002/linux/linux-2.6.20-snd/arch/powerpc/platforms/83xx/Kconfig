@@ -1,0 +1,91 @@
+menu "Platform support"
+	depends on PPC_83xx
+
+choice
+	prompt "Machine Type"
+	default MPC834x_SYS
+
+config MPC8313_RDB
+	bool "Freescale MPC8313 RDB"
+	select DEFAULT_UIMAGE
+	help
+	  This option enables support fro the MPC8313 RDB board.
+
+config MPC832x_MDS
+	bool "Freescale MPC832x MDS"
+	select DEFAULT_UIMAGE
+	select QUICC_ENGINE
+	help
+	  This option enables support for the MPC832x MDS evaluation board.
+
+config MPC834x_SYS
+	bool "Freescale MPC834x SYS"
+	select DEFAULT_UIMAGE
+	help
+	  This option enables support for the MPC 834x SYS evaluation board.
+
+	  Be aware that PCI buses can only function when SYS board is plugged
+	  into the PIB (Platform IO Board) board from Freescale which provide
+	  3 PCI slots.  The PIBs PCI initialization is the bootloader's
+	  responsibility.
+
+config MPC834x_ITX
+	bool "Freescale MPC834x ITX"
+	select DEFAULT_UIMAGE
+	help
+	  This option enables support for the MPC 834x ITX evaluation board.
+
+	  Be aware that PCI initialization is the bootloader's
+	  responsibility.
+
+config MPC8360E_PB
+	bool "Freescale MPC8360E PB"
+	select DEFAULT_UIMAGE
+	select QUICC_ENGINE
+	help
+	  This option enables support for the MPC836x EMDS Processor Board.
+
+endchoice
+
+config PPC_MPC831x
+	bool
+	select PPC_UDBG_16550
+	select PPC_INDIRECT_PCI
+	select USB_EHCI_FSL
+	default y if MPC8313_RDB
+
+config PPC_MPC832x
+	bool
+	select PPC_UDBG_16550
+	select PPC_INDIRECT_PCI
+	default y if MPC832x_MDS
+
+config MPC834x
+	bool
+	select PPC_UDBG_16550
+	select PPC_INDIRECT_PCI
+	select USB_EHCI_FSL
+	default y if MPC834x_SYS || MPC834x_ITX
+
+config PPC_MPC836x
+	bool
+	select PPC_UDBG_16550
+	select PPC_INDIRECT_PCI
+	default y if MPC8360E_PB
+
+config PPC_83xx_PM
+	bool
+	default y
+	depends on PPC_83xx && PM
+	select PPC32_SUSPEND
+
+config MPC83xx_GTM
+	tristate "83xx General-Purpose Timers for PM wakeup"
+	help
+	  This enables a driver for the GTM4 timer, to be used
+	  as a wakeup source for suspend-to-RAM.  To arm the
+	  timer, write the number of seconds until expiration
+	  to the "timeout" file in the device's sysfs directory.
+	  To disarm, write 0 to the "timeout" file.
+
+endmenu

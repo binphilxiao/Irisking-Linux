@@ -1,0 +1,209 @@
+Freescale MPC8313ERDB Board
+-----------------------------------------
+
+1.	Board Switches and Jumpers
+
+	SW3 is used to set CFG_RESET_SOURCE.
+	
+	To boot using a 66 MHz crystal from the image at 0xFE000000 in NOR
+	flash, using the Hardware Reset Configuration set on the DIP switches:
+
+	REVA1 and REVA2 board
+	SW3		SW4
+	+------+	+------+
+	|      |	| **** |
+	| **** |	|      |
+	+------+ ON	+------+ ON
+	  4321		  4321
+
+	REVA board
+	SW3		SW4
+	+------+	+------+
+	|      |	| * ** |
+	| **** |	|  *   |
+	+------+ ON	+------+ ON
+	  4321		  4321
+	(where the '*' indicates the position of the tab of the switch.)
+
+2.	Memory Map
+2.1.	The memory map looks like this:
+	0x0000_0000	0x07ff_ffff	DDR		128M
+	0x8000_0000	0x8fff_ffff	PCI MEM		256M
+	0x9000_0000	0x9fff_ffff	PCI_MMIO	256M
+	0xe000_0000	0xe00f_ffff	IMMR		1M
+	0xe200_0000	0xe20f_ffff	PCI IO	 	16M
+	0xe280_0000	0xe280_7fff	NAND FLASH	32K
+	0xfe00_0000	0xfe7f_ffff	NOR FLASH	8M
+
+3.	Definitions
+
+3.1	Explanation of NEW definitions in:
+	
+	include/configs/MPC8313ERDB.h
+	
+	CONFIG_MPC83xx		MPC83xx family
+	CONFIG_MPC8313		MPC8313/MPC8311 specific
+	CONFIG_MPC8313ERDB	MPC8313ERDB board specific
+
+4.	Compilation
+
+	Assuming you're using BASH shell:
+	export CROSS_COMPILE=your-cross-compile-prefix
+	cd u-boot
+	make distclean
+	make MPC8313ERDB_config
+	make
+	
+	Flash images is built for loading from the bottom of Flash, 
+	The image location is determined by the TEXT_BASE value 
+	in the board/mpc8313erdb/config.mk file:
+	TEXT_BASE = 0xFE000000 builds a low image.
+
+5.	Downloading and Flashing Images
+
+5.1	Download over ethernet:
+
+	tftp 100000 /tftpboot/u-boot.bin	
+
+5.2	Reflash U-boot Image using U-boot
+
+	=>run burn_uboot
+
+	or
+
+	=>tftp 100000 /tftpboot/u-boot.bin
+	=>protect off fe000000 fe06ffff
+	=>erase fe000000 fe06ffff
+	=>cp.b 10000 fe000000 $filesize
+
+5.3	Downloading and Flashing vsc7385 L2 Switch Image for TSEC0
+	
+	Flash the VSC firmware image to flash address 0xfe7fe000.
+	=>run burn_vscfw 
+
+	Load VSC firmware image to VSC L2 Switch
+	=>run run_vscld
+
+	The following steps are done the same thing.
+	
+	=>tftp 100000 /tftpboot/vsc2bin
+	=>protect off fe7fe000 fe7fffff
+	=>erase fe7fe000 fe7ffffff
+	=>cp.b 100000 fe7fe000 $filesize
+
+	=>tftp 40000 /tftpboot/vsc7385_load.bin
+	=>go 40004
+	
+	Note: The VSC7385 loader program is examples/vsc7385_load/vsc7385_load.bin
+	refer examples/vsc7385_load/Readme.txt for detail 
+
+5.4	Downloading and Booting Linux Kernel
+5.4.1	with nfs fs
+	=>run nfsargs addip addtty
+	=>tftp 200000 kernel_img
+	=>tftp 700000 oft_dtb
+	=>bootm 200000 - 700000
+
+5.4.2	With ramdisk fs
+	=>run ramargs addtty
+	=>tftp 200000 kernel_img
+	=>tftp 400000 ramdisk_img
+	=>tftp 700000 oft_dtb
+	=>bootm 200000 400000 700000
+
+6. NAND Flash Boot
+
+6.1 
+    The MPC8313ERDB support the ability to boot from a small page
+    (512 byte) NAND flash, using the u-boot nand_spl tree to build the
+    u-boot-nand.bin file that contains both the stage 0 boot loader and
+    also the main u-boot image. The first 4k bytes of the first non-bad
+    page are used to hold the stage 0 boot loader, and are always read
+    using the hardware ECC functionality. The stage 0 boatloader writes
+    the BR0 chip select to the desired value, so can change the ECC
+    method to software by clearing the DECC bits of the BR0 register.
+    This is modified in the board configuration file by setting the DECC
+    field to 2 in the NAND Chip Select Base Register (CFG_NAND_BR_PRELIM)
+    for hardware ECC, or 0 for software ECC.
+
+    NOTE:  The binary image file must be written to the NAND Flash with
+    the same Hardware ECC method enabled so that the checksums are
+    compatible. If hardware ECC is used this is simply done by writing
+    the entire image using the hardware ECC.  If software ECC is desired
+    then the first 0x4000 bytes must be written with hardware ECC while
+    the rest of the image must be written with software ECC.
+
+6.2 
+    To boot using a 66 MHz crystal from an image in NAND Flash set the
+    DIP switches a follows:
+
+	REVA1 and REVA2 board
+	SW3		SW4
+	+------+	+------+
+	| *    |	|  *** |
+	|  *** |	| *    |
+	+------+ ON	+------+ ON
+	  4321		  4321
+	
+	(where the '*' indicates the position of the tab of the switch.)
+	
+6.3
+    To make NAND boot image, use MPC8313ERDB_NAND_config in section 4.
+
+    Make will create the u-boot-nand.bin file that contains both the
+    Stage 0 bootloader as well as u-boot.
+
+    If using hardware ECC, copy the new image file into the NAND flash:
+        tftp 100000 u-boot-nand.bin
+        nand erase 0 60000
+        nand write.jffs2 100000 0 50000
+
+    If using software ECC, copy the initial section using hardware ECC:
+        tftp 100000 u-boot-nand.bin
+        nand erase 0 60000
+        nand write.jffs2 100000 0 4000
+    and the rest using an version of u-boot with software ECC:
+        tftp 100000 u-boot-nand.bin
+        nand write.jffs2 104000 4000 50000
+
+    The environment variables are also kept in the NAND flash.
+
+    The stage 0 bootloader of up to 4 KBytes is loaded into the NAND FCM
+    buffer by the hardware boot sequencer. This code sets up the DDR and
+    then copies itself to DDR before loading the full u-boot image into
+    RAM.
+
+    During the boot sequence the stage 0 bootloader can display messages
+    to the console:
+
+        NAND SPL - U-Boot 1.1.6 (April 3 2007 - 10:00:00) MPC83XX
+        Loading from NAND : ........................
+
+    The second line shows the status of each block that is read from the
+    NAND flash. The staus may be any of the following:
+        .    = NAND Flash block read succesfully and copied to DDR
+        B    = NAND Flash block is marked as bad so was skipped
+        T    = Timeout occured waiting for NAND read to complete (fatal)
+        U    = Uncorrectable ECC error occured (fatal)
+        1-9,a-z = Number of 256 byte blocks with single correctable errors
+                  (only for software ECC when CFG_NAND_BOOT_SHOW_ECC_NUM
+                   is defined)
+
+    Configuration macros
+        CFG_NAND_BOOT_QUIET - suppress stage 0 messages, except fatal errors
+	CFG_NAND_BOOT_SHOW_ECC_NUM - report number of errors fixed by SW ECC
+        CFG_NAND_BLOCK_SIZE - number of data bytes in each NAND Flash block
+        CFG_NAND_PAGE_SIZE  - number of data bytes in each NAND Flash page
+        CFG_NAND_BAD_BLOCK_POS - byte position of the bad block marker
+        CFG_NAND_RELOC      - location to copy the stage 0 bootloader to
+        CFG_NAND_U_BOOT_DST - location to copy the main u-boot image to
+        CFG_NAND_U_BOOT_SIZE - size of the main u-boot image in bytes
+        CFG_NAND_U_BOOT_START - start address to jump to in main u-boot
+
+6.4
+    Booting from NAND device is not supported on MPC8313ERDB REVA board 
+    because of hardware issue.
+
+7 Notes
+    The console baudrate for MPC8313ERDB is 115200bps.
+	

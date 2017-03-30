@@ -1,0 +1,1 @@
+cmd_loginutils/lib.a := rm -f loginutils/lib.a; /opt/crosstool/gcc-4.1.0-glibc-2.3.6/powerpc-603-linux-gnu/bin/powerpc-603-linux-gnu-ar  rcs loginutils/lib.a loginutils/addgroup.o loginutils/adduser.o loginutils/chpasswd.o loginutils/cryptpw.o loginutils/deluser.o loginutils/getty.o loginutils/login.o loginutils/passwd.o loginutils/su.o loginutils/sulogin.o loginutils/vlock.o

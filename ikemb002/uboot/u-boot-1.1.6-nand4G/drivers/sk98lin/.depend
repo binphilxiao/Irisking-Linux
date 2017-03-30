@@ -1,0 +1,75 @@
+skge.o: skge.c /root/ppc/u-boot-1.1.6/include/config.h \
+  /root/ppc/u-boot-1.1.6/include/configs/MPC8313ERDB.h \
+  /root/ppc/u-boot-1.1.6/include/cmd_confdefs.h
+skaddr.o: skaddr.c /root/ppc/u-boot-1.1.6/include/config.h \
+  /root/ppc/u-boot-1.1.6/include/configs/MPC8313ERDB.h \
+  /root/ppc/u-boot-1.1.6/include/cmd_confdefs.h
+skgehwt.o: skgehwt.c /root/ppc/u-boot-1.1.6/include/config.h \
+  /root/ppc/u-boot-1.1.6/include/configs/MPC8313ERDB.h \
+  /root/ppc/u-boot-1.1.6/include/cmd_confdefs.h
+skgeinit.o: skgeinit.c /root/ppc/u-boot-1.1.6/include/config.h \
+  /root/ppc/u-boot-1.1.6/include/configs/MPC8313ERDB.h \
+  /root/ppc/u-boot-1.1.6/include/cmd_confdefs.h
+skgepnmi.o: skgepnmi.c /root/ppc/u-boot-1.1.6/include/config.h \
+  /root/ppc/u-boot-1.1.6/include/configs/MPC8313ERDB.h \
+  /root/ppc/u-boot-1.1.6/include/cmd_confdefs.h
+skgesirq.o: skgesirq.c /root/ppc/u-boot-1.1.6/include/config.h \
+  /root/ppc/u-boot-1.1.6/include/configs/MPC8313ERDB.h \
+  /root/ppc/u-boot-1.1.6/include/cmd_confdefs.h
+ski2c.o: ski2c.c /root/ppc/u-boot-1.1.6/include/config.h \
+  /root/ppc/u-boot-1.1.6/include/configs/MPC8313ERDB.h \
+  /root/ppc/u-boot-1.1.6/include/cmd_confdefs.h
+sklm80.o: sklm80.c /root/ppc/u-boot-1.1.6/include/config.h \
+  /root/ppc/u-boot-1.1.6/include/configs/MPC8313ERDB.h \
+  /root/ppc/u-boot-1.1.6/include/cmd_confdefs.h
+skqueue.o: skqueue.c /root/ppc/u-boot-1.1.6/include/config.h \
+  /root/ppc/u-boot-1.1.6/include/configs/MPC8313ERDB.h \
+  /root/ppc/u-boot-1.1.6/include/cmd_confdefs.h
+skrlmt.o: skrlmt.c /root/ppc/u-boot-1.1.6/include/config.h \
+  /root/ppc/u-boot-1.1.6/include/configs/MPC8313ERDB.h \
+  /root/ppc/u-boot-1.1.6/include/cmd_confdefs.h
+sktimer.o: sktimer.c /root/ppc/u-boot-1.1.6/include/config.h \
+  /root/ppc/u-boot-1.1.6/include/configs/MPC8313ERDB.h \
+  /root/ppc/u-boot-1.1.6/include/cmd_confdefs.h
+skvpd.o: skvpd.c /root/ppc/u-boot-1.1.6/include/config.h \
+  /root/ppc/u-boot-1.1.6/include/configs/MPC8313ERDB.h \
+  /root/ppc/u-boot-1.1.6/include/cmd_confdefs.h
+skxmac2.o: skxmac2.c /root/ppc/u-boot-1.1.6/include/config.h \
+  /root/ppc/u-boot-1.1.6/include/configs/MPC8313ERDB.h \
+  /root/ppc/u-boot-1.1.6/include/cmd_confdefs.h
+skcsum.o: skcsum.c /root/ppc/u-boot-1.1.6/include/config.h \
+  /root/ppc/u-boot-1.1.6/include/configs/MPC8313ERDB.h \
+  /root/ppc/u-boot-1.1.6/include/cmd_confdefs.h
+uboot_skb.o: uboot_skb.c /root/ppc/u-boot-1.1.6/include/config.h \
+  /root/ppc/u-boot-1.1.6/include/configs/MPC8313ERDB.h \
+  /root/ppc/u-boot-1.1.6/include/cmd_confdefs.h
+uboot_drv.o: uboot_drv.c /root/ppc/u-boot-1.1.6/include/common.h \
+  /root/ppc/u-boot-1.1.6/include/config.h \
+  /root/ppc/u-boot-1.1.6/include/configs/MPC8313ERDB.h \
+  /root/ppc/u-boot-1.1.6/include/cmd_confdefs.h \
+  /root/ppc/u-boot-1.1.6/include/linux/bitops.h \
+  /root/ppc/u-boot-1.1.6/include/asm/bitops.h \
+  /root/ppc/u-boot-1.1.6/include/linux/config.h \
+  /root/ppc/u-boot-1.1.6/include/asm/byteorder.h \
+  /root/ppc/u-boot-1.1.6/include/asm/types.h \
+  /root/ppc/u-boot-1.1.6/include/linux/byteorder/big_endian.h \
+  /root/ppc/u-boot-1.1.6/include/linux/byteorder/swab.h \
+  /root/ppc/u-boot-1.1.6/include/linux/byteorder/generic.h \
+  /root/ppc/u-boot-1.1.6/include/linux/types.h \
+  /root/ppc/u-boot-1.1.6/include/linux/posix_types.h \
+  /root/ppc/u-boot-1.1.6/include/linux/stddef.h \
+  /root/ppc/u-boot-1.1.6/include/asm/posix_types.h \
+  /root/ppc/u-boot-1.1.6/include/linux/string.h \
+  /root/ppc/u-boot-1.1.6/include/asm/string.h \
+  /root/ppc/u-boot-1.1.6/include/asm/ptrace.h \
+  /opt/crosstool/gcc-4.1.0-glibc-2.3.6/powerpc-603-linux-gnu/lib/gcc/powerpc-603-linux-gnu/4.1.0/include/stdarg.h \
+  /root/ppc/u-boot-1.1.6/include/mpc83xx.h \
+  /root/ppc/u-boot-1.1.6/include/asm/e300.h \
+  /root/ppc/u-boot-1.1.6/include/asm/immap_83xx.h \
+  /root/ppc/u-boot-1.1.6/include/asm/fsl_i2c.h \
+  /root/ppc/u-boot-1.1.6/include/part.h \
+  /root/ppc/u-boot-1.1.6/include/ide.h \
+  /root/ppc/u-boot-1.1.6/include/flash.h \
+  /root/ppc/u-boot-1.1.6/include/image.h \
+  /root/ppc/u-boot-1.1.6/include/asm/u-boot.h \
+  /root/ppc/u-boot-1.1.6/include/asm/global_data.h

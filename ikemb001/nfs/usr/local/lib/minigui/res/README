@@ -1,0 +1,37 @@
+NAME
+====
+
+minigui-res version 1.3.3 for MiniGUI 1.3.3.
+
+
+NOTE
+====
+
+The GB2312 fonts in this free release do not contains 
+all characters defined by GB2312.1980 charset. They could
+only be used for evaluation.
+
+The complete GB2312 fonts are available in MiniGUI-VAR
+product from Feynman Software.
+
+
+INSTALLATION
+===========
+
+Installation path by default:
+
+    /usr/local/lib/minigui/res
+
+Run
+
+    make install
+
+to install the resource files.
+
+Run
+
+    make uninstall
+
+to uninstall the resource files.
+
+

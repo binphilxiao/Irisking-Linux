@@ -1,0 +1,24 @@
+config PROFILING
+	bool "Profiling support (EXPERIMENTAL)"
+	help
+	  Say Y here to enable the extended profiling support mechanisms used
+	  by profilers such as OProfile.
+
+
+config OPROFILE
+	tristate "OProfile system profiling (EXPERIMENTAL)"
+	depends on PROFILING
+	help
+	  OProfile is a profiling system capable of profiling the
+	  whole system, include the kernel, kernel modules, libraries,
+	  and applications.
+
+	  If unsure, say N.
+
+config OPROFILE_E300
+	bool "Profiling support on the e300 core"
+	depends on OPROFILE
+	depends on 6xx
+	help
+	 Select this option when running on an e300 PowerPC core
+	 If unsure, say N.

@@ -1,0 +1,11 @@
+#!/bin/sh
+
+#note: line, include "filesystem:....", is reserved, don't delete. hcj
+
+echo mount /proc
+mount -t proc /proc
+echo mount devpts
+mount -t devpts devpts /dev/pts
+echo mount /sysfs
+mount -t sysfs /sysfs
+

@@ -1,0 +1,4 @@
+insmod s3c2410-adc.ko
+mknod /dev/adc c 250 0
+insmod hpi.ko
+mknod /dev/hpi c 240 0

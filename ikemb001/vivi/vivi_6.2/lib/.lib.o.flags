@@ -1,0 +1,3 @@
+ifeq (boot_kernel.o heap.o memory.o command.o exec.o ctype.o printk.o misc.o load_file.o string.o time.o,$(strip $(subst $(comma),:,$(EXTRA_LDFLAGS) $(obj-y))))
+FILES_FLAGS_UP_TO_DATE += lib.o
+endif

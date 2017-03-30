@@ -1,0 +1,1 @@
+cmd_procps/lib.a := rm -f procps/lib.a; /opt/crosstool/gcc-4.1.0-glibc-2.3.6/powerpc-603-linux-gnu/bin/powerpc-603-linux-gnu-ar  rcs procps/lib.a procps/free.o procps/fuser.o procps/kill.o procps/nmeter.o procps/pgrep.o procps/pidof.o procps/ps.o procps/renice.o procps/sysctl.o procps/top.o procps/uptime.o procps/watch.o

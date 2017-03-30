@@ -1,0 +1,147 @@
+diff -purN u-boot.org/cpu/mpc83xx/cpu_init.c u-boot.open/cpu/mpc83xx/cpu_init.c
+--- u-boot.org/cpu/mpc83xx/cpu_init.c	2006-12-26 14:24:21.000000000 +0800
++++ u-boot.open/cpu/mpc83xx/cpu_init.c	2006-12-26 15:12:28.000000000 +0800
+@@ -67,6 +67,10 @@ void cpu_init_f (volatile immap_t * im)
+ 
+ 	/* system performance tweaking */
+ 
++#if defined (CFG_SCCR)
++	im->clk.sccr = CFG_SCCR;
++#endif
++
+ #ifdef CFG_ACR_PIPE_DEP
+ 	/* Arbiter pipeline depth */
+ 	im->arbiter.acr = (im->arbiter.acr & ~ACR_PIPE_DEP) | (3 << ACR_PIPE_DEP_SHIFT);
+diff -purN u-boot.org/cpu/mpc83xx/cpu.c u-boot.open/cpu/mpc83xx/cpu.c
+--- u-boot.org/cpu/mpc83xx/cpu.c	2006-12-26 14:24:21.000000000 +0800
++++ u-boot.open/cpu/mpc83xx/cpu.c	2006-12-26 15:12:28.000000000 +0800
+@@ -62,6 +62,12 @@ int checkcpu(void)
+ 	case SPR_8349_REV11:
+ 		puts("MPC8349, ");
+ 		break;
++ 	case SPR_8313_REV10:
++ 		puts("MPC8313, ");
++ 		break;
++ 	case SPR_8313E_REV10:
++ 		puts("MPC8313E, ");
++		break;
+ 	case SPR_8347E_REV10_TBGA:
+ 	case SPR_8347E_REV11_TBGA:
+ 	case SPR_8347E_REV10_PBGA:
+diff -purN u-boot.org/cpu/mpc83xx/speed.c u-boot.open/cpu/mpc83xx/speed.c
+--- u-boot.org/cpu/mpc83xx/speed.c	2006-12-26 14:24:21.000000000 +0800
++++ u-boot.open/cpu/mpc83xx/speed.c	2006-12-26 15:12:28.000000000 +0800
+@@ -21,6 +21,15 @@
+  * along with this program; if not, write to the Free Software
+  * Foundation, Inc., 59 Temple Place, Suite 330, Boston,
+  * MA 02111-1307 USA
++ *
++ * Change log:
++ *
++ * 20050101: Eran Liberty (liberty@freescale.com)
++ *           Initial file creating (porting from 85XX & 8260)
++ * Feb,2006: Dave Liu (r63238@freescale.com)
++ * 	     provide support to MPC8349E, MPC8360E and MPC832xE
++ * Dec,2006: Nick Spence (Nick.Spence@freescale.com)
++ *           Add support for MPC8313E
+  */
+ 
+ #include <common.h>
+@@ -99,7 +108,7 @@ int get_clocks(void)
+ 	u32 lcrr;
+ 
+ 	u32 csb_clk;
+-#if defined(CONFIG_MPC8349)
++#if defined(CONFIG_MPC8349) || defined(CONFIG_MPC8313)
+ 	u32 tsec1_clk;
+ 	u32 tsec2_clk;
+ 	u32 usbmph_clk;
+@@ -227,7 +236,51 @@ int get_clocks(void)
+ 		return -9;
+ 	}
+ #endif
+-#if defined (CONFIG_MPC8360)
++/* FIXME */
++#if defined (CONFIG_MPC8313)
++	switch ((sccr & SCCR_TSEC1CM) >> SCCR_TSEC1CM_SHIFT) {
++	case 0:
++		tsec1_clk = 0;
++		break;
++	case 1:
++		tsec1_clk = csb_clk;
++		break;
++	case 2:
++		tsec1_clk = csb_clk / 2;
++		break;
++	case 3:
++		tsec1_clk = csb_clk / 3;
++		break;
++	default:
++		/* unkown SCCR_TSEC1CM value */
++		return -4;
++	}
++	tsec2_clk = tsec1_clk;
++	if (!(sccr & SCCR_TSEC1ON)) tsec1_clk = 0;
++	if (!(sccr & SCCR_TSEC2ON)) tsec2_clk = 0;
++	
++	usbmph_clk = 0;
++	
++	switch ((sccr & SCCR_USBDRCM) >> SCCR_USBDRCM_SHIFT) {
++	case 0:
++		usbdr_clk = 0;
++		break;
++	case 1:
++		usbdr_clk = csb_clk;
++		break;
++	case 2:
++		usbdr_clk = csb_clk / 2;
++		break;
++	case 3:
++		usbdr_clk = csb_clk / 3;
++		break;
++	default:
++		/* unkown SCCR_USBDRCM value */
++		return -8;
++	}
++#endif
++
++#if defined (CONFIG_MPC8360) || defined(CONFIG_MPC8313)
+ 	i2c1_clk = csb_clk;
+ #endif
+ 	i2c2_clk = csb_clk;	/* i2c-2 clk is equal to csb clk */
+@@ -249,7 +302,7 @@ int get_clocks(void)
+ 		/* unkown SCCR_ENCCM value */
+ 		return -6;
+ 	}
+-#if defined(CONFIG_MPC8349) || defined(CONFIG_MPC8360)
++#if defined(CONFIG_MPC8349) || defined(CONFIG_MPC8360) || defined(CONFIG_MPC8313)
+ 	lbiu_clk = csb_clk *
+ 	           (1 + ((im->reset.rcwl & RCWL_LBIUCM) >> RCWL_LBIUCM_SHIFT));
+ #else
+@@ -266,7 +319,7 @@ int get_clocks(void)
+ 		/* unknown lcrr */
+ 		return -10;
+ 	}
+-#if defined(CONFIG_MPC8349) || defined(CONFIG_MPC8360)
++#if defined(CONFIG_MPC8349) || defined(CONFIG_MPC8360) || defined(CONFIG_MPC8313)
+ 	ddr_clk = csb_clk *
+ 		  (1 + ((im->reset.rcwl & RCWL_DDRCM) >> RCWL_DDRCM_SHIFT));
+ 	corepll = (im->reset.rcwl & RCWL_COREPLL) >> RCWL_COREPLL_SHIFT;
+@@ -314,7 +367,7 @@ int get_clocks(void)
+ #endif
+ 
+ 	gd->csb_clk = csb_clk;
+-#if defined(CONFIG_MPC8349)
++#if defined(CONFIG_MPC8349) || defined (CONFIG_MPC8313)
+ 	gd->tsec1_clk = tsec1_clk;
+ 	gd->tsec2_clk = tsec2_clk;
+ 	gd->usbmph_clk = usbmph_clk;
+@@ -364,7 +417,7 @@ int print_clock_conf(void)
+ 	printf("  SEC:                 %4d MHz\n", gd->enc_clk / 1000000);
+ 	printf("  I2C1:                %4d MHz\n", gd->i2c1_clk / 1000000);
+ 	printf("  I2C2:                %4d MHz\n", gd->i2c2_clk / 1000000);
+-#if defined(CONFIG_MPC8349)
++#if defined(CONFIG_MPC8349) || defined(CONFIG_MPC8313)
+ 	printf("  TSEC1:               %4d MHz\n", gd->tsec1_clk / 1000000);
+ 	printf("  TSEC2:               %4d MHz\n", gd->tsec2_clk / 1000000);
+ 	printf("  USB MPH:             %4d MHz\n", gd->usbmph_clk / 1000000);

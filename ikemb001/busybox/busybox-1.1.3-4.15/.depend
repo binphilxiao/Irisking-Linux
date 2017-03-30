@@ -1,0 +1,2078 @@
+
+/root/arm/busybox-1.1.3/util-linux/ipcs.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/util-linux/dmesg.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/clean/up.h
+
+/root/arm/busybox-1.1.3/util-linux/rdate.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/util-linux/fdisk.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/fdisk/advanced.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/osf/label.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/sun/label.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/sgi/label.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/aix/label.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/fdisk/writable.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/clean/up.h
+
+/root/arm/busybox-1.1.3/util-linux/fdformat.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/clean/up.h
+
+/root/arm/busybox-1.1.3/util-linux/getopt.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/util-linux/swaponoff.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/util-linux/mkswap.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/util-linux/more.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/use/termios.h
+
+/root/arm/busybox-1.1.3/util-linux/mount.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/use/feature/mtab/support.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/mtab/support.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/mount/loop.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/mount/nfs.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/clean/up.h
+
+/root/arm/busybox-1.1.3/util-linux/mkfs_minix.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/minix2.h
+
+/root/arm/busybox-1.1.3/util-linux/fbset.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/fbset/readmode.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/fbset/fancy.h
+
+/root/arm/busybox-1.1.3/util-linux/switch_root.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/util-linux/pivot_root.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/util-linux/freeramdisk.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/enable/freeramdisk.h \
+   /root/arm/busybox-1.1.3/include/config/enable/fdflush.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/clean/up.h
+
+/root/arm/busybox-1.1.3/util-linux/nfsmount.o: /root/arm/busybox-1.1.3/util-linux/nfsmount.h \
+   /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/mount/nfs.h
+
+/root/arm/busybox-1.1.3/util-linux/ipcrm.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/util-linux/hexdump.o: /root/arm/busybox-1.1.3/include/dump.h \
+   /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/util-linux/umount.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/mtab/support.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/mount/loop.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/umount/all.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/clean/up.h
+
+/root/arm/busybox-1.1.3/util-linux/setarch.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/util-linux/hwclock.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/hwclock/adjtime/fhs.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/hwclock/longoptions.h
+
+/root/arm/busybox-1.1.3/util-linux/fsck_minix.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/minix2.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/clean/up.h
+
+/root/arm/busybox-1.1.3/util-linux/mdev.o: /root/arm/busybox-1.1.3/include/xregex.h \
+   /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/mdev/conf.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/clean/up.h
+
+/root/arm/busybox-1.1.3/util-linux/losetup.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/clean/up.h
+
+/root/arm/busybox-1.1.3/util-linux/readprofile.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/editors/patch.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/editors/vi.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/vi/optimize/cursor.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/vi/win/resize.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/vi/set.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/vi/setopts.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/vi/readonly.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/vi/dot/cmd.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/vi/use/signals.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/vi/search.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/vi/yankmark.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/vi/colon.h \
+   /root/arm/busybox-1.1.3/include/config/config/locale/support.h
+
+/root/arm/busybox-1.1.3/editors/awk.o: /root/arm/busybox-1.1.3/include/xregex.h \
+   /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/awk/math.h
+
+/root/arm/busybox-1.1.3/editors/sed.o: /root/arm/busybox-1.1.3/include/xregex.h \
+   /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/clean/up.h
+
+/root/arm/busybox-1.1.3/applets/version.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/bb/bt.h \
+   /root/arm/busybox-1.1.3/include/config/bb/ver.h
+
+/root/arm/busybox-1.1.3/applets/applets.o: /root/arm/busybox-1.1.3/include/grp_.h \
+   /root/arm/busybox-1.1.3/include/pwd_.h \
+   /root/arm/busybox-1.1.3/include/applets.h \
+   /root/arm/busybox-1.1.3/include/usage.h \
+   /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/suid/config/quiet.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/suid/config.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/suid/config.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/suid.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/suid.h
+
+/root/arm/busybox-1.1.3/applets/busybox.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/autowidth.h \
+   /root/arm/busybox-1.1.3/include/config/enable/locale/support.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/installer.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/installer.h
+
+/root/arm/busybox-1.1.3/procps/free.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/procps/pidof.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/pidof/omit.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/pidof/single.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/clean/up.h
+
+/root/arm/busybox-1.1.3/procps/sysctl.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/procps/ps.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/ps/wide.h \
+   /root/arm/busybox-1.1.3/include/config/enable/selinux.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/clean/up.h
+
+/root/arm/busybox-1.1.3/procps/top.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/top/cpu/usage/percentage.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/use/termios.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/clean/up.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/clean/up.h
+
+/root/arm/busybox-1.1.3/procps/uptime.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/procps/fuser.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/procps/renice.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/procps/kill.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/killall.h
+
+/root/arm/busybox-1.1.3/init/init.o: /root/arm/busybox-1.1.3/init/init_shared.h \
+   /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/syslogd.h \
+   /root/arm/busybox-1.1.3/include/config/enable/swaponoff.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/initrd.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/init/coredumps.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/extra/quiet.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/init/sctty.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/use/inittab.h
+
+/root/arm/busybox-1.1.3/init/halt.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/initrd.h \
+   /root/arm/busybox-1.1.3/include/config/enable/init.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/clean/up.h
+
+/root/arm/busybox-1.1.3/init/init_shared.o: /root/arm/busybox-1.1.3/init/init_shared.h \
+   /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/init.h
+
+/root/arm/busybox-1.1.3/init/mesg.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/findutils/find.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/find/exec.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/find/inum.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/find/newer.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/find/xdev.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/find/type.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/find/perm.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/find/mmin.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/find/mtime.h
+
+/root/arm/busybox-1.1.3/findutils/xargs.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/xargs/support/zero/term.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/xargs/support/termopt.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/xargs/support/quotes.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/xargs/support/confirmation.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/clean/up.h
+
+/root/arm/busybox-1.1.3/findutils/grep.o: /root/arm/busybox-1.1.3/include/xregex.h \
+   /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/grep/context.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/grep/fgrep/alias.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/grep/egrep/alias.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/clean/up.h
+
+/root/arm/busybox-1.1.3/libpwdgrp/pwd_grp_internal.o: /root/arm/busybox-1.1.3/include/shadow_.h \
+   /root/arm/busybox-1.1.3/include/grp_.h \
+   /root/arm/busybox-1.1.3/include/pwd_.h \
+   /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/libpwdgrp/pwd_grp.o: /root/arm/busybox-1.1.3/libpwdgrp/pwd_grp_internal.c \
+   /root/arm/busybox-1.1.3/include/shadow_.h \
+   /root/arm/busybox-1.1.3/include/grp_.h \
+   /root/arm/busybox-1.1.3/include/pwd_.h \
+   /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/loginutils/sulogin.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/shadowpasswds.h \
+   /root/arm/busybox-1.1.3/include/config/enable/selinux.h
+
+/root/arm/busybox-1.1.3/loginutils/vlock.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/loginutils/delgroup.o: /root/arm/busybox-1.1.3/loginutils/delline.c \
+   /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/deluser.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/shadowpasswds.h
+
+/root/arm/busybox-1.1.3/loginutils/passwd.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/shadowpasswds.h
+
+/root/arm/busybox-1.1.3/loginutils/deluser.o: /root/arm/busybox-1.1.3/loginutils/delline.c \
+   /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/shadowpasswds.h
+
+/root/arm/busybox-1.1.3/loginutils/addgroup.o: /root/arm/busybox-1.1.3/include/grp_.h \
+   /root/arm/busybox-1.1.3/include/pwd_.h \
+   /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/adduser.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/shadowpasswds.h
+
+/root/arm/busybox-1.1.3/loginutils/adduser.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/addgroup.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/shadowpasswds.h
+
+/root/arm/busybox-1.1.3/loginutils/su.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/utmp.h \
+   /root/arm/busybox-1.1.3/include/config/enable/selinux.h
+
+/root/arm/busybox-1.1.3/loginutils/login.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/securetty.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/wtmp.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/utmp.h \
+   /root/arm/busybox-1.1.3/include/config/config/selinux.h
+
+/root/arm/busybox-1.1.3/loginutils/delline.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/loginutils/getty.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/syslogd.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/wtmp.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/utmp.h
+
+/root/arm/busybox-1.1.3/include/busybox.h: /root/arm/busybox-1.1.3/include/libbb.h \
+   /root/arm/busybox-1.1.3/include/applets.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/buffers/go/in/bss.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/buffers/go/on/stack.h
+
+/root/arm/busybox-1.1.3/include/pwd_.h: /root/arm/busybox-1.1.3/include/config/config/use/bb/pwd/grp.h
+
+/root/arm/busybox-1.1.3/include/libbb.h: /root/arm/busybox-1.1.3/include/platform.h \
+   /root/arm/busybox-1.1.3/include/shadow_.h \
+   /root/arm/busybox-1.1.3/include/grp_.h \
+   /root/arm/busybox-1.1.3/include/pwd_.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/top/cpu/usage/percentage.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/shadowpasswds.h \
+   /root/arm/busybox-1.1.3/include/config/config/selinux.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/devfs.h
+
+/root/arm/busybox-1.1.3/include/inet_common.h: /root/arm/busybox-1.1.3/include/platform.h
+
+/root/arm/busybox-1.1.3/include/shadow_.h: /root/arm/busybox-1.1.3/include/config/config/use/bb/shadow.h
+
+/root/arm/busybox-1.1.3/include/unarchive.h: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/include/usage.h: /root/arm/busybox-1.1.3/include/config/config/feature/ipc/syslog.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/remote/log.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/rotate/logfile.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/ps/wide.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/pidof/omit.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/pidof/single.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/tftp/blocksize.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/tftp/put.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/tftp/get.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/telnetd/inetd.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/telnet/autologin.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/fancy/ping6.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/fancy/ping.h \
+   /root/arm/busybox-1.1.3/include/config/config/nc/gaping/security/hole.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/ipcalc/fancy.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/ifconfig/hw.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/ifconfig/memstart/ioaddr/irq.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/ifconfig/slip.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/ifconfig/status.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/httpd/setuid.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/httpd/auth/md5.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/httpd/basic/auth.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/httpd/usage/from/inetd/only.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/ipv6.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/makedevs/table.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/makedevs/leaf.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/hdparm/hdio/getset/dma.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/hdparm/hdio/tristate/hwif.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/hdparm/hdio/drive/reset.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/hdparm/hdio/unregister/hwif.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/hdparm/hdio/scan/hwif.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/hdparm/get/identity.h \
+   /root/arm/busybox-1.1.3/include/config/config/devfsd/fg/np.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/mtab/support.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/mount/loop.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/insmod/load/map.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/xargs/support/zero/term.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/xargs/support/termopt.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/xargs/support/confirmation.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/grep/context.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/grep/egrep/alias.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/find/exec.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/find/inum.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/find/newer.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/find/type.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/find/perm.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/find/mmin.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/find/mtime.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/readlink/follow.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/md5/sha1/sum/check.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/human/readable.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/autowidth.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/fancy/tail.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/stat/format.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/sort/big.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/fancy/sleep.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/ls/color.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/ls/timestamps.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/ls/sortfiles.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/ls/recursive.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/ls/followlinks.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/ls/filetypes.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/fancy/head.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/fancy/echo.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/du/defalt/blocksize_1k.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/date/isofmt.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/tar/compress.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/tar/gzip.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/tar/lzma.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/tar/bzip2.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/tar/create.h \
+   /root/arm/busybox-1.1.3/include/config/config/selinux.h
+
+/root/arm/busybox-1.1.3/include/grp_.h: /root/arm/busybox-1.1.3/include/config/config/use/bb/pwd/grp.h
+
+/root/arm/busybox-1.1.3/include/applets.h: /root/arm/busybox-1.1.3/include/config/use/logger.h \
+   /root/arm/busybox-1.1.3/include/config/use/klogd.h \
+   /root/arm/busybox-1.1.3/include/config/use/logread.h \
+   /root/arm/busybox-1.1.3/include/config/use/syslogd.h \
+   /root/arm/busybox-1.1.3/include/config/use/msh.h \
+   /root/arm/busybox-1.1.3/include/config/use/lash.h \
+   /root/arm/busybox-1.1.3/include/config/use/hush.h \
+   /root/arm/busybox-1.1.3/include/config/use/ash.h \
+   /root/arm/busybox-1.1.3/include/config/use/feature/sh/is/msh.h \
+   /root/arm/busybox-1.1.3/include/config/use/feature/sh/is/lash.h \
+   /root/arm/busybox-1.1.3/include/config/use/feature/sh/is/hush.h \
+   /root/arm/busybox-1.1.3/include/config/use/feature/sh/is/ash.h \
+   /root/arm/busybox-1.1.3/include/config/use/uptime.h \
+   /root/arm/busybox-1.1.3/include/config/use/top.h \
+   /root/arm/busybox-1.1.3/include/config/use/bb/sysctl.h \
+   /root/arm/busybox-1.1.3/include/config/use/renice.h \
+   /root/arm/busybox-1.1.3/include/config/use/ps.h \
+   /root/arm/busybox-1.1.3/include/config/use/pidof.h \
+   /root/arm/busybox-1.1.3/include/config/use/killall.h \
+   /root/arm/busybox-1.1.3/include/config/use/kill.h \
+   /root/arm/busybox-1.1.3/include/config/use/fuser.h \
+   /root/arm/busybox-1.1.3/include/config/use/free.h \
+   /root/arm/busybox-1.1.3/include/config/use/zcip.h \
+   /root/arm/busybox-1.1.3/include/config/use/dumpleases.h \
+   /root/arm/busybox-1.1.3/include/config/use/udhcpc.h \
+   /root/arm/busybox-1.1.3/include/config/use/udhcpd.h \
+   /root/arm/busybox-1.1.3/include/config/use/wget.h \
+   /root/arm/busybox-1.1.3/include/config/use/vconfig.h \
+   /root/arm/busybox-1.1.3/include/config/use/traceroute.h \
+   /root/arm/busybox-1.1.3/include/config/use/tftp.h \
+   /root/arm/busybox-1.1.3/include/config/use/telnetd.h \
+   /root/arm/busybox-1.1.3/include/config/use/telnet.h \
+   /root/arm/busybox-1.1.3/include/config/use/route.h \
+   /root/arm/busybox-1.1.3/include/config/use/ping6.h \
+   /root/arm/busybox-1.1.3/include/config/use/ping.h \
+   /root/arm/busybox-1.1.3/include/config/use/nslookup.h \
+   /root/arm/busybox-1.1.3/include/config/use/netstat.h \
+   /root/arm/busybox-1.1.3/include/config/use/nc.h \
+   /root/arm/busybox-1.1.3/include/config/use/nameif.h \
+   /root/arm/busybox-1.1.3/include/config/use/iptunnel.h \
+   /root/arm/busybox-1.1.3/include/config/use/iproute.h \
+   /root/arm/busybox-1.1.3/include/config/use/iplink.h \
+   /root/arm/busybox-1.1.3/include/config/use/ipaddr.h \
+   /root/arm/busybox-1.1.3/include/config/use/ipcalc.h \
+   /root/arm/busybox-1.1.3/include/config/use/ip.h \
+   /root/arm/busybox-1.1.3/include/config/use/inetd.h \
+   /root/arm/busybox-1.1.3/include/config/use/ifupdown.h \
+   /root/arm/busybox-1.1.3/include/config/use/ifconfig.h \
+   /root/arm/busybox-1.1.3/include/config/use/httpd.h \
+   /root/arm/busybox-1.1.3/include/config/use/hostname.h \
+   /root/arm/busybox-1.1.3/include/config/use/ftpput.h \
+   /root/arm/busybox-1.1.3/include/config/use/ftpget.h \
+   /root/arm/busybox-1.1.3/include/config/use/fakeidentd.h \
+   /root/arm/busybox-1.1.3/include/config/use/ether/wake.h \
+   /root/arm/busybox-1.1.3/include/config/use/dnsd.h \
+   /root/arm/busybox-1.1.3/include/config/use/arping.h \
+   /root/arm/busybox-1.1.3/include/config/use/watchdog.h \
+   /root/arm/busybox-1.1.3/include/config/use/time.h \
+   /root/arm/busybox-1.1.3/include/config/use/setsid.h \
+   /root/arm/busybox-1.1.3/include/config/use/strings.h \
+   /root/arm/busybox-1.1.3/include/config/use/rx.h \
+   /root/arm/busybox-1.1.3/include/config/use/runlevel.h \
+   /root/arm/busybox-1.1.3/include/config/use/mt.h \
+   /root/arm/busybox-1.1.3/include/config/use/mountpoint.h \
+   /root/arm/busybox-1.1.3/include/config/use/makedevs.h \
+   /root/arm/busybox-1.1.3/include/config/use/hdparm.h \
+   /root/arm/busybox-1.1.3/include/config/use/less.h \
+   /root/arm/busybox-1.1.3/include/config/use/last.h \
+   /root/arm/busybox-1.1.3/include/config/use/eject.h \
+   /root/arm/busybox-1.1.3/include/config/use/devfsd.h \
+   /root/arm/busybox-1.1.3/include/config/use/dc.h \
+   /root/arm/busybox-1.1.3/include/config/use/crontab.h \
+   /root/arm/busybox-1.1.3/include/config/use/crond.h \
+   /root/arm/busybox-1.1.3/include/config/use/bbconfig.h \
+   /root/arm/busybox-1.1.3/include/config/use/adjtimex.h \
+   /root/arm/busybox-1.1.3/include/config/use/umount.h \
+   /root/arm/busybox-1.1.3/include/config/use/switch/root.h \
+   /root/arm/busybox-1.1.3/include/config/use/swaponoff.h \
+   /root/arm/busybox-1.1.3/include/config/use/setarch.h \
+   /root/arm/busybox-1.1.3/include/config/use/readprofile.h \
+   /root/arm/busybox-1.1.3/include/config/use/rdate.h \
+   /root/arm/busybox-1.1.3/include/config/use/pivot/root.h \
+   /root/arm/busybox-1.1.3/include/config/use/mount.h \
+   /root/arm/busybox-1.1.3/include/config/use/more.h \
+   /root/arm/busybox-1.1.3/include/config/use/mkswap.h \
+   /root/arm/busybox-1.1.3/include/config/use/mdev.h \
+   /root/arm/busybox-1.1.3/include/config/use/losetup.h \
+   /root/arm/busybox-1.1.3/include/config/use/ipcs.h \
+   /root/arm/busybox-1.1.3/include/config/use/ipcrm.h \
+   /root/arm/busybox-1.1.3/include/config/use/hwclock.h \
+   /root/arm/busybox-1.1.3/include/config/use/hexdump.h \
+   /root/arm/busybox-1.1.3/include/config/use/getopt.h \
+   /root/arm/busybox-1.1.3/include/config/use/mkfs/minix.h \
+   /root/arm/busybox-1.1.3/include/config/use/fsck/minix.h \
+   /root/arm/busybox-1.1.3/include/config/use/freeramdisk.h \
+   /root/arm/busybox-1.1.3/include/config/use/fdisk.h \
+   /root/arm/busybox-1.1.3/include/config/use/fdformat.h \
+   /root/arm/busybox-1.1.3/include/config/use/fdflush.h \
+   /root/arm/busybox-1.1.3/include/config/use/fbset.h \
+   /root/arm/busybox-1.1.3/include/config/use/dmesg.h \
+   /root/arm/busybox-1.1.3/include/config/use/modprobe.h \
+   /root/arm/busybox-1.1.3/include/config/use/lsmod.h \
+   /root/arm/busybox-1.1.3/include/config/use/rmmod.h \
+   /root/arm/busybox-1.1.3/include/config/use/insmod.h \
+   /root/arm/busybox-1.1.3/include/config/use/findfs.h \
+   /root/arm/busybox-1.1.3/include/config/use/e2label.h \
+   /root/arm/busybox-1.1.3/include/config/use/tune2fs.h \
+   /root/arm/busybox-1.1.3/include/config/use/mke2fs.h \
+   /root/arm/busybox-1.1.3/include/config/use/lsattr.h \
+   /root/arm/busybox-1.1.3/include/config/use/fsck.h \
+   /root/arm/busybox-1.1.3/include/config/use/e2fsck.h \
+   /root/arm/busybox-1.1.3/include/config/use/chattr.h \
+   /root/arm/busybox-1.1.3/include/config/use/vlock.h \
+   /root/arm/busybox-1.1.3/include/config/use/sulogin.h \
+   /root/arm/busybox-1.1.3/include/config/use/su.h \
+   /root/arm/busybox-1.1.3/include/config/use/passwd.h \
+   /root/arm/busybox-1.1.3/include/config/use/login.h \
+   /root/arm/busybox-1.1.3/include/config/use/getty.h \
+   /root/arm/busybox-1.1.3/include/config/use/deluser.h \
+   /root/arm/busybox-1.1.3/include/config/use/adduser.h \
+   /root/arm/busybox-1.1.3/include/config/use/delgroup.h \
+   /root/arm/busybox-1.1.3/include/config/use/addgroup.h \
+   /root/arm/busybox-1.1.3/include/config/use/mesg.h \
+   /root/arm/busybox-1.1.3/include/config/use/halt.h \
+   /root/arm/busybox-1.1.3/include/config/use/feature/initrd.h \
+   /root/arm/busybox-1.1.3/include/config/use/init.h \
+   /root/arm/busybox-1.1.3/include/config/use/xargs.h \
+   /root/arm/busybox-1.1.3/include/config/use/feature/grep/fgrep/alias.h \
+   /root/arm/busybox-1.1.3/include/config/use/feature/grep/egrep/alias.h \
+   /root/arm/busybox-1.1.3/include/config/use/grep.h \
+   /root/arm/busybox-1.1.3/include/config/use/find.h \
+   /root/arm/busybox-1.1.3/include/config/use/vi.h \
+   /root/arm/busybox-1.1.3/include/config/use/sed.h \
+   /root/arm/busybox-1.1.3/include/config/use/patch.h \
+   /root/arm/busybox-1.1.3/include/config/use/awk.h \
+   /root/arm/busybox-1.1.3/include/config/use/which.h \
+   /root/arm/busybox-1.1.3/include/config/use/start/stop/daemon.h \
+   /root/arm/busybox-1.1.3/include/config/use/run/parts.h \
+   /root/arm/busybox-1.1.3/include/config/use/readlink.h \
+   /root/arm/busybox-1.1.3/include/config/use/pipe/progress.h \
+   /root/arm/busybox-1.1.3/include/config/use/mktemp.h \
+   /root/arm/busybox-1.1.3/include/config/use/setkeycodes.h \
+   /root/arm/busybox-1.1.3/include/config/use/setconsole.h \
+   /root/arm/busybox-1.1.3/include/config/use/reset.h \
+   /root/arm/busybox-1.1.3/include/config/use/openvt.h \
+   /root/arm/busybox-1.1.3/include/config/use/loadkmap.h \
+   /root/arm/busybox-1.1.3/include/config/use/loadfont.h \
+   /root/arm/busybox-1.1.3/include/config/use/dumpkmap.h \
+   /root/arm/busybox-1.1.3/include/config/use/deallocvt.h \
+   /root/arm/busybox-1.1.3/include/config/use/clear.h \
+   /root/arm/busybox-1.1.3/include/config/use/chvt.h \
+   /root/arm/busybox-1.1.3/include/config/use/yes.h \
+   /root/arm/busybox-1.1.3/include/config/use/whoami.h \
+   /root/arm/busybox-1.1.3/include/config/use/who.h \
+   /root/arm/busybox-1.1.3/include/config/use/wc.h \
+   /root/arm/busybox-1.1.3/include/config/use/watch.h \
+   /root/arm/busybox-1.1.3/include/config/use/uuencode.h \
+   /root/arm/busybox-1.1.3/include/config/use/uudecode.h \
+   /root/arm/busybox-1.1.3/include/config/use/usleep.h \
+   /root/arm/busybox-1.1.3/include/config/use/uniq.h \
+   /root/arm/busybox-1.1.3/include/config/use/uname.h \
+   /root/arm/busybox-1.1.3/include/config/use/tty.h \
+   /root/arm/busybox-1.1.3/include/config/use/true.h \
+   /root/arm/busybox-1.1.3/include/config/use/tr.h \
+   /root/arm/busybox-1.1.3/include/config/use/touch.h \
+   /root/arm/busybox-1.1.3/include/config/use/test.h \
+   /root/arm/busybox-1.1.3/include/config/use/tee.h \
+   /root/arm/busybox-1.1.3/include/config/use/tail.h \
+   /root/arm/busybox-1.1.3/include/config/use/sync.h \
+   /root/arm/busybox-1.1.3/include/config/use/sum.h \
+   /root/arm/busybox-1.1.3/include/config/use/stty.h \
+   /root/arm/busybox-1.1.3/include/config/use/stat.h \
+   /root/arm/busybox-1.1.3/include/config/use/sort.h \
+   /root/arm/busybox-1.1.3/include/config/use/sleep.h \
+   /root/arm/busybox-1.1.3/include/config/use/sha1sum.h \
+   /root/arm/busybox-1.1.3/include/config/use/seq.h \
+   /root/arm/busybox-1.1.3/include/config/use/rmdir.h \
+   /root/arm/busybox-1.1.3/include/config/use/rm.h \
+   /root/arm/busybox-1.1.3/include/config/use/realpath.h \
+   /root/arm/busybox-1.1.3/include/config/use/pwd.h \
+   /root/arm/busybox-1.1.3/include/config/use/printf.h \
+   /root/arm/busybox-1.1.3/include/config/use/printenv.h \
+   /root/arm/busybox-1.1.3/include/config/use/od.h \
+   /root/arm/busybox-1.1.3/include/config/use/nohup.h \
+   /root/arm/busybox-1.1.3/include/config/use/nice.h \
+   /root/arm/busybox-1.1.3/include/config/use/mv.h \
+   /root/arm/busybox-1.1.3/include/config/use/mknod.h \
+   /root/arm/busybox-1.1.3/include/config/use/mkfifo.h \
+   /root/arm/busybox-1.1.3/include/config/use/mkdir.h \
+   /root/arm/busybox-1.1.3/include/config/use/md5sum.h \
+   /root/arm/busybox-1.1.3/include/config/use/ls.h \
+   /root/arm/busybox-1.1.3/include/config/use/logname.h \
+   /root/arm/busybox-1.1.3/include/config/use/ln.h \
+   /root/arm/busybox-1.1.3/include/config/use/length.h \
+   /root/arm/busybox-1.1.3/include/config/use/install.h \
+   /root/arm/busybox-1.1.3/include/config/use/id.h \
+   /root/arm/busybox-1.1.3/include/config/use/hostid.h \
+   /root/arm/busybox-1.1.3/include/config/use/head.h \
+   /root/arm/busybox-1.1.3/include/config/use/fold.h \
+   /root/arm/busybox-1.1.3/include/config/use/false.h \
+   /root/arm/busybox-1.1.3/include/config/use/expr.h \
+   /root/arm/busybox-1.1.3/include/config/use/env.h \
+   /root/arm/busybox-1.1.3/include/config/use/echo.h \
+   /root/arm/busybox-1.1.3/include/config/use/du.h \
+   /root/arm/busybox-1.1.3/include/config/use/unix2dos.h \
+   /root/arm/busybox-1.1.3/include/config/use/dos2unix.h \
+   /root/arm/busybox-1.1.3/include/config/use/dirname.h \
+   /root/arm/busybox-1.1.3/include/config/use/df.h \
+   /root/arm/busybox-1.1.3/include/config/use/dd.h \
+   /root/arm/busybox-1.1.3/include/config/use/date.h \
+   /root/arm/busybox-1.1.3/include/config/use/cut.h \
+   /root/arm/busybox-1.1.3/include/config/use/cp.h \
+   /root/arm/busybox-1.1.3/include/config/use/comm.h \
+   /root/arm/busybox-1.1.3/include/config/use/cmp.h \
+   /root/arm/busybox-1.1.3/include/config/use/chroot.h \
+   /root/arm/busybox-1.1.3/include/config/use/chown.h \
+   /root/arm/busybox-1.1.3/include/config/use/chmod.h \
+   /root/arm/busybox-1.1.3/include/config/use/chgrp.h \
+   /root/arm/busybox-1.1.3/include/config/use/cat.h \
+   /root/arm/busybox-1.1.3/include/config/use/cal.h \
+   /root/arm/busybox-1.1.3/include/config/use/basename.h \
+   /root/arm/busybox-1.1.3/include/config/use/unzip.h \
+   /root/arm/busybox-1.1.3/include/config/use/unlzma.h \
+   /root/arm/busybox-1.1.3/include/config/use/uncompress.h \
+   /root/arm/busybox-1.1.3/include/config/use/tar.h \
+   /root/arm/busybox-1.1.3/include/config/use/rpm.h \
+   /root/arm/busybox-1.1.3/include/config/use/rpm2cpio.h \
+   /root/arm/busybox-1.1.3/include/config/use/gzip.h \
+   /root/arm/busybox-1.1.3/include/config/use/gunzip.h \
+   /root/arm/busybox-1.1.3/include/config/use/dpkg/deb.h \
+   /root/arm/busybox-1.1.3/include/config/use/dpkg.h \
+   /root/arm/busybox-1.1.3/include/config/use/cpio.h \
+   /root/arm/busybox-1.1.3/include/config/use/bunzip2.h \
+   /root/arm/busybox-1.1.3/include/config/use/ar.h \
+   /root/arm/busybox-1.1.3/include/config/config/install/no/usr.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/verbose/usage.h
+
+/root/arm/busybox-1.1.3/miscutils/makedevs.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/makedevs/table.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/makedevs/leaf.h
+
+/root/arm/busybox-1.1.3/miscutils/time.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/miscutils/watchdog.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/miscutils/last.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/miscutils/crond.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/crond/call/sendmail.h
+
+/root/arm/busybox-1.1.3/miscutils/adjtimex.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/bb/ver.h
+
+/root/arm/busybox-1.1.3/miscutils/less.o: /root/arm/busybox-1.1.3/include/xregex.h \
+   /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/less/regexp.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/less/marks.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/less/flagcs.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/less/flags.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/less/brackets.h
+
+/root/arm/busybox-1.1.3/miscutils/bbconfig.o: /root/arm/busybox-1.1.3/include/bbconfigopts.h \
+   /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/miscutils/hdparm.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/hdparm/hdio/getset/dma.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/hdparm/hdio/tristate/hwif.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/hdparm/hdio/drive/reset.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/hdparm/hdio/unregister/hwif.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/hdparm/hdio/scan/hwif.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/hdparm/get/identity.h
+
+/root/arm/busybox-1.1.3/miscutils/devfsd.o: /root/arm/busybox-1.1.3/include/xregex.h \
+   /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/enable/devfsd/verbose.h \
+   /root/arm/busybox-1.1.3/include/config/config/devfsd/verbose.h \
+   /root/arm/busybox-1.1.3/include/config/enable/devfsd/fg/np.h \
+   /root/arm/busybox-1.1.3/include/config/enable/devfsd/modload.h \
+   /root/arm/busybox-1.1.3/include/config/enable/debug.h \
+   /root/arm/busybox-1.1.3/include/config/config/debug.h
+
+/root/arm/busybox-1.1.3/miscutils/mountpoint.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/miscutils/mt.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/miscutils/dc.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/miscutils/crontab.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/miscutils/rx.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/miscutils/strings.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/clean/up.h
+
+/root/arm/busybox-1.1.3/miscutils/eject.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/mtab/support.h
+
+/root/arm/busybox-1.1.3/miscutils/setsid.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/miscutils/runlevel.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/e2fsbb.h: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/lsattr.o: /root/arm/busybox-1.1.3/e2fsprogs/e2p/e2p.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/e2fsbb.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h \
+   /root/arm/busybox-1.1.3/include/config/config/lfs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/util.o: /root/arm/busybox-1.1.3/e2fsprogs/util.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/blkid/blkid.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fs.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/e2p/e2p.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/e2fsbb.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h \
+   /root/arm/busybox-1.1.3/include/config/config/lfs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/e2fsck.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/kernel-jbd.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/uuid/uuid.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_ext_attr.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/fsck.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/blkid/blkid.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fs.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/chattr.o: /root/arm/busybox-1.1.3/e2fsprogs/e2p/e2p.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/e2fsbb.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h \
+   /root/arm/busybox-1.1.3/include/config/config/lfs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/tune2fs.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/jfs_user.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/uuid/uuid.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/util.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/blkid/blkid.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fs.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/e2p/e2p.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/e2fsbb.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h \
+   /root/arm/busybox-1.1.3/include/grp_.h \
+   /root/arm/busybox-1.1.3/include/pwd_.h \
+   /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/enable/findfs.h \
+   /root/arm/busybox-1.1.3/include/config/config/findfs.h \
+   /root/arm/busybox-1.1.3/include/config/enable/e2label.h \
+   /root/arm/busybox-1.1.3/include/config/config/e2label.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/clean/up.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/fsck.o: /root/arm/busybox-1.1.3/e2fsprogs/fsck.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/blkid/blkid.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/e2fsbb.h \
+   /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/devfs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/mke2fs.o: /root/arm/busybox-1.1.3/e2fsprogs/uuid/uuid.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/util.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fs.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/e2p/e2p.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/e2fsbb.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/clean/up.h
+
+/root/arm/busybox-1.1.3/libbb/make_directory.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/error_msg.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/safe_read.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/printf.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/find_root_device.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/chomp.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/procps.o: /root/arm/busybox-1.1.3/include/libbb.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/top/cpu/usage/percentage.h
+
+/root/arm/busybox-1.1.3/libbb/get_line_from_file.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/inet_common.o: /root/arm/busybox-1.1.3/include/inet_common.h \
+   /root/arm/busybox-1.1.3/include/libbb.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/ipv6.h
+
+/root/arm/busybox-1.1.3/libbb/run_shell.o: /root/arm/busybox-1.1.3/include/libbb.h \
+   /root/arm/busybox-1.1.3/include/config/config/selinux.h
+
+/root/arm/busybox-1.1.3/libbb/md5.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/md5/size/vs/speed.h
+
+/root/arm/busybox-1.1.3/libbb/create_icmp6_socket.o: /root/arm/busybox-1.1.3/include/libbb.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/ipv6.h
+
+/root/arm/busybox-1.1.3/libbb/pwd2spwd.o: /root/arm/busybox-1.1.3/include/libbb.h \
+   /root/arm/busybox-1.1.3/include/shadow_.h
+
+/root/arm/busybox-1.1.3/libbb/xgetlarg.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/libbb/correct_password.o: /root/arm/busybox-1.1.3/include/libbb.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/shadowpasswds.h
+
+/root/arm/busybox-1.1.3/libbb/create_icmp_socket.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/xgethostbyname2.o: /root/arm/busybox-1.1.3/include/libbb.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/ipv6.h
+
+/root/arm/busybox-1.1.3/libbb/setup_environment.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/xregcomp.o: /root/arm/busybox-1.1.3/include/libbb.h \
+   /root/arm/busybox-1.1.3/include/xregex.h
+
+/root/arm/busybox-1.1.3/libbb/llist.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/bb_asprintf.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/process_escape_sequence.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/safe_strncpy.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/vdprintf.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/fgets_str.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/perror_nomsg_and_die.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/vfork_daemon_rexec.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/xgethostbyname.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/login.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/get_terminal_width_height.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/libbb/obscure.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/recursive_action.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/qmodule.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/speed_table.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/loop.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/herror_msg_and_die.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/trim.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/perror_msg_and_die.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/device_open.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/xconnect.o: /root/arm/busybox-1.1.3/include/libbb.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/clean/up.h
+
+/root/arm/busybox-1.1.3/libbb/xreadlink.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/mtab_file.o: /root/arm/busybox-1.1.3/include/libbb.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/mtab/support.h
+
+/root/arm/busybox-1.1.3/libbb/skip_whitespace.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/verror_msg.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/sha1.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/libbb/wfopen.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/restricted_shell.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/error_msg_and_die.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/xgetularg.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/xstat.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/getopt_ulflags.o: /root/arm/busybox-1.1.3/include/libbb.h \
+   /root/arm/busybox-1.1.3/include/config/config/ps.h \
+   /root/arm/busybox-1.1.3/include/config/config/tar.h \
+   /root/arm/busybox-1.1.3/include/config/config/ar.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/clean/up.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/clean/up.h
+
+/root/arm/busybox-1.1.3/libbb/xgetcwd.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/bb_askpass.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/copy_file.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/preserve/hardlinks.h
+
+/root/arm/busybox-1.1.3/libbb/run_parts.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/dump.o: /root/arm/busybox-1.1.3/include/libbb.h \
+   /root/arm/busybox-1.1.3/include/dump.h
+
+/root/arm/busybox-1.1.3/libbb/default_error_retval.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/find_mount_point.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/concat_subpath_file.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/concat_path_file.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/human_readable.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/read_package_field.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/print_file.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/last_char_is.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/change_identity.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/vherror_msg.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/find_pid_by_name.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/isdirectory.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/inode_hash.o: /root/arm/busybox-1.1.3/include/libbb.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/clean/up.h
+
+/root/arm/busybox-1.1.3/libbb/get_console.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/vperror_msg.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/messages.o: /root/arm/busybox-1.1.3/include/libbb.h \
+   /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/bb/bt.h \
+   /root/arm/busybox-1.1.3/include/config/bb/ver.h
+
+/root/arm/busybox-1.1.3/libbb/xfuncs.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/libbb/simplify_path.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/herror_msg.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/ask_confirmation.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/full_write.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/parse_mode.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/perror_msg.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/bb_echo.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/fancy/echo.h
+
+/root/arm/busybox-1.1.3/libbb/parse_number.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/mtab.o: /root/arm/busybox-1.1.3/include/libbb.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/mtab/support.h
+
+/root/arm/busybox-1.1.3/libbb/copyfd.o: /root/arm/busybox-1.1.3/include/libbb.h \
+   /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/libbb/kernel_version.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/safe_strtol.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/remove_file.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/safe_write.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/pw_encrypt.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/full_read.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/libbb/bb_pwd.o: /root/arm/busybox-1.1.3/include/libbb.h \
+   /root/arm/busybox-1.1.3/include/grp_.h \
+   /root/arm/busybox-1.1.3/include/pwd_.h
+
+/root/arm/busybox-1.1.3/coreutils/md5_sha1_sum.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/md5/sha1/sum/check.h \
+   /root/arm/busybox-1.1.3/include/config/enable/sha1sum.h \
+   /root/arm/busybox-1.1.3/include/config/config/sha1sum.h \
+   /root/arm/busybox-1.1.3/include/config/enable/md5sum.h \
+   /root/arm/busybox-1.1.3/include/config/config/md5sum.h
+
+/root/arm/busybox-1.1.3/coreutils/printf.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/coreutils/uname.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/coreutils/sleep.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/fancy/sleep.h
+
+/root/arm/busybox-1.1.3/coreutils/wc.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/locale/support.h
+
+/root/arm/busybox-1.1.3/coreutils/basename.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/coreutils/nice.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/coreutils/mv.o: /root/arm/busybox-1.1.3/coreutils/libcoreutils/coreutils.h \
+   /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/coreutils/dd.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/coreutils/df.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/human/readable.h
+
+/root/arm/busybox-1.1.3/coreutils/uudecode.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/coreutils/mknod.o: /root/arm/busybox-1.1.3/coreutils/libcoreutils/coreutils.h \
+   /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/coreutils/ln.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/coreutils/mkfifo.o: /root/arm/busybox-1.1.3/coreutils/libcoreutils/coreutils.h \
+   /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/coreutils/dos2unix.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/coreutils/tee.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/tee/use/block/io.h
+
+/root/arm/busybox-1.1.3/coreutils/date.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/use/feature/date/isofmt.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/date/isofmt.h
+
+/root/arm/busybox-1.1.3/coreutils/rm.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/coreutils/expr.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/enable/expr/math/support_64.h
+
+/root/arm/busybox-1.1.3/coreutils/true.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/coreutils/test.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/test_64.h
+
+/root/arm/busybox-1.1.3/coreutils/fold.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/enable/debug/yank/susv2.h
+
+/root/arm/busybox-1.1.3/coreutils/tr.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/tr/equiv.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/tr/classes.h
+
+/root/arm/busybox-1.1.3/coreutils/sort.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/sort/big.h
+
+/root/arm/busybox-1.1.3/coreutils/seq.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/coreutils/nohup.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/clean/up.h
+
+/root/arm/busybox-1.1.3/coreutils/pwd.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/coreutils/chmod.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/coreutils/realpath.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/clean/up.h
+
+/root/arm/busybox-1.1.3/coreutils/yes.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/coreutils/head.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/fancy/head.h \
+   /root/arm/busybox-1.1.3/include/config/enable/debug/yank/susv2.h
+
+/root/arm/busybox-1.1.3/coreutils/od.o: /root/arm/busybox-1.1.3/include/dump.h \
+   /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/coreutils/cp.o: /root/arm/busybox-1.1.3/coreutils/libcoreutils/coreutils.h \
+   /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/coreutils/stty.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/coreutils/sum.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/coreutils/install.o: /root/arm/busybox-1.1.3/coreutils/libcoreutils/coreutils.h \
+   /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/clean/up.h
+
+/root/arm/busybox-1.1.3/coreutils/uuencode.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/coreutils/stat.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/stat/format.h
+
+/root/arm/busybox-1.1.3/coreutils/uniq.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/coreutils/chown.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/coreutils/echo.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/coreutils/length.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/coreutils/env.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/coreutils/tail.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/fancy/tail.h \
+   /root/arm/busybox-1.1.3/include/config/enable/debug/yank/susv2.h
+
+/root/arm/busybox-1.1.3/coreutils/false.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/coreutils/hostid.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/coreutils/usleep.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/coreutils/who.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/coreutils/chroot.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/coreutils/cal.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/locale/support.h
+
+/root/arm/busybox-1.1.3/coreutils/chgrp.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/coreutils/printenv.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/coreutils/mkdir.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/coreutils/watch.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/coreutils/cat.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/coreutils/du.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/human/readable.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/du/defalt/blocksize_1k.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/clean/up.h
+
+/root/arm/busybox-1.1.3/coreutils/sync.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/coreutils/rmdir.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/coreutils/ls.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/human/readable.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/autowidth.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/ls/color/is/default.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/ls/color.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/ls/username.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/ls/timestamps.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/ls/sortfiles.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/ls/recursive.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/ls/followlinks.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/ls/filetypes.h \
+   /root/arm/busybox-1.1.3/include/config/config/selinux.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/clean/up.h \
+   /root/arm/busybox-1.1.3/include/config/config/locale/support.h
+
+/root/arm/busybox-1.1.3/coreutils/cmp.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/coreutils/dirname.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/coreutils/tty.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/coreutils/touch.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/coreutils/logname.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/coreutils/whoami.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/coreutils/cut.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/coreutils/comm.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/coreutils/id.o: /root/arm/busybox-1.1.3/include/pwd_.h \
+   /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/selinux.h
+
+/root/arm/busybox-1.1.3/shell/cmdedit.h: /root/arm/busybox-1.1.3/include/config/config/feature/command/savehistory.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/command/editing/vi.h \
+   /root/arm/busybox-1.1.3/include/config/config/ash.h
+
+/root/arm/busybox-1.1.3/shell/hush.o: /root/arm/busybox-1.1.3/shell/cmdedit.h \
+   /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/sh/fancy/prompt.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/command/editing.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/sh/standalone/shell.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/sh/extra/quiet.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/clean/up.h \
+   /root/arm/busybox-1.1.3/include/config/bb/ver.h
+
+/root/arm/busybox-1.1.3/shell/lash.o: /root/arm/busybox-1.1.3/shell/cmdedit.h \
+   /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/sh/fancy/prompt.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/command/editing.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/sh/standalone/shell.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/sh/extra/quiet.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/clean/up.h \
+   /root/arm/busybox-1.1.3/include/config/config/locale/support.h
+
+/root/arm/busybox-1.1.3/shell/msh.o: /root/arm/busybox-1.1.3/shell/cmdedit.h \
+   /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/sh/fancy/prompt.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/command/editing.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/sh/standalone/shell.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/sh/extra/quiet.h
+
+/root/arm/busybox-1.1.3/shell/cmdedit.o: /root/arm/busybox-1.1.3/shell/cmdedit.h \
+   /root/arm/busybox-1.1.3/include/pwd_.h \
+   /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/sh/fancy/prompt.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/command/username/completion.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/command/tab/completion.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/command/savehistory.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/command/history.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/command/editing/vi.h \
+   /root/arm/busybox-1.1.3/include/config/use/feature/command/editing.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/command/editing.h \
+   /root/arm/busybox-1.1.3/include/config/config/ash.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/clean/up.h \
+   /root/arm/busybox-1.1.3/include/config/config/locale/support.h
+
+/root/arm/busybox-1.1.3/shell/ash.o: /root/arm/busybox-1.1.3/shell/cmdedit.h \
+   /root/arm/busybox-1.1.3/include/pwd_.h \
+   /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/sh/fancy/prompt.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/command/tab/completion.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/command/savehistory.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/command/editing/vi.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/command/editing.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/sh/standalone/shell.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/sh/extra/quiet.h \
+   /root/arm/busybox-1.1.3/include/config/config/ash/expand/prmt.h \
+   /root/arm/busybox-1.1.3/include/config/config/ash/random/support.h \
+   /root/arm/busybox-1.1.3/include/config/config/ash/optimize/for/size.h \
+   /root/arm/busybox-1.1.3/include/config/config/ash/mail.h \
+   /root/arm/busybox-1.1.3/include/config/enable/ash/builtin/echo.h \
+   /root/arm/busybox-1.1.3/include/config/config/ash/builtin/echo.h \
+   /root/arm/busybox-1.1.3/include/config/enable/ash/cmdcmd.h \
+   /root/arm/busybox-1.1.3/include/config/config/ash/cmdcmd.h \
+   /root/arm/busybox-1.1.3/include/config/config/ash/getopts.h \
+   /root/arm/busybox-1.1.3/include/config/config/ash/math/support_64.h \
+   /root/arm/busybox-1.1.3/include/config/config/ash/math/support.h \
+   /root/arm/busybox-1.1.3/include/config/enable/ash/alias.h \
+   /root/arm/busybox-1.1.3/include/config/config/ash/alias.h \
+   /root/arm/busybox-1.1.3/include/config/config/ash/read/timeout.h \
+   /root/arm/busybox-1.1.3/include/config/config/ash/read/nchars.h \
+   /root/arm/busybox-1.1.3/include/config/enable/ash/job/control.h \
+   /root/arm/busybox-1.1.3/include/config/config/ash/job/control.h \
+   /root/arm/busybox-1.1.3/include/config/config/locale/support.h
+
+/root/arm/busybox-1.1.3/debianutils/pipe_progress.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/clean/up.h
+
+/root/arm/busybox-1.1.3/debianutils/which.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/debianutils/start_stop_daemon.o: /root/arm/busybox-1.1.3/include/pwd_.h \
+   /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/debianutils/readlink.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/readlink/follow.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/clean/up.h
+
+/root/arm/busybox-1.1.3/debianutils/mktemp.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/debianutils/run_parts.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/console-tools/setkeycodes.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/console-tools/dumpkmap.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/console-tools/setconsole.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/console-tools/reset.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/console-tools/loadfont.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/console-tools/chvt.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/console-tools/clear.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/console-tools/loadkmap.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/console-tools/openvt.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/console-tools/deallocvt.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/modutils/lsmod.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/query/module/interface.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/check/tainted/module.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/lsmod/pretty_2_6/output.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/clean/up.h
+
+/root/arm/busybox-1.1.3/modutils/rmmod.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/query/module/interface.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature_2_6/modules.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature_2_4/modules.h
+
+/root/arm/busybox-1.1.3/modutils/modprobe.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature_2_6/modules.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/modprobe/multiple/options.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/clean/up.h
+
+/root/arm/busybox-1.1.3/modutils/insmod.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature_2_6/modules.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature_2_4/modules.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/check/tainted/module.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/insmod/load/map/full.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/insmod/load/map.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/insmod/loadinkmem.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/insmod/ksymoops/symbols.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/insmod/version/checking.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/clean/up.h
+
+/root/arm/busybox-1.1.3/sysklogd/logger.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/syslogd.h
+
+/root/arm/busybox-1.1.3/sysklogd/klogd.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/sysklogd/syslogd.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/ipc/syslog/buffer/size.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/ipc/syslog.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/remote/log.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/rotate/logfile.h \
+   /root/arm/busybox-1.1.3/include/config/bb/ver.h
+
+/root/arm/busybox-1.1.3/sysklogd/logread.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/logread/reduced/locking.h
+
+/root/arm/busybox-1.1.3/archival/uncompress.o: /root/arm/busybox-1.1.3/include/unarchive.h \
+   /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/archival/rpm.o: /root/arm/busybox-1.1.3/include/unarchive.h \
+   /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/archival/dpkg_deb.o: /root/arm/busybox-1.1.3/include/unarchive.h \
+   /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/deb/tar/bz2.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/deb/tar/gz.h
+
+/root/arm/busybox-1.1.3/archival/ar.o: /root/arm/busybox-1.1.3/include/unarchive.h \
+   /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/archival/unzip.o: /root/arm/busybox-1.1.3/include/unarchive.h \
+   /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/archival/unlzma.o: /root/arm/busybox-1.1.3/include/unarchive.h \
+   /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/archival/gzip.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/gunzip.h
+
+/root/arm/busybox-1.1.3/archival/gunzip.o: /root/arm/busybox-1.1.3/include/unarchive.h \
+   /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/gunzip/uncompress.h
+
+/root/arm/busybox-1.1.3/archival/dpkg.o: /root/arm/busybox-1.1.3/include/unarchive.h \
+   /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/deb/tar/bz2.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/deb/tar/gz.h
+
+/root/arm/busybox-1.1.3/archival/tar.o: /root/arm/busybox-1.1.3/include/unarchive.h \
+   /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/tar/long/options.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/tar/long/options.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/tar/compress.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/tar/compress.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/tar/gzip.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/tar/gzip.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/tar/from.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/tar/from.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/tar/lzma.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/tar/lzma.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/tar/bzip2.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/tar/bzip2.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/tar/create.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/tar/create.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/clean/up.h
+
+/root/arm/busybox-1.1.3/archival/bunzip2.o: /root/arm/busybox-1.1.3/include/unarchive.h \
+   /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/archival/cpio.o: /root/arm/busybox-1.1.3/include/unarchive.h \
+   /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/archival/rpm2cpio.o: /root/arm/busybox-1.1.3/include/unarchive.h \
+   /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/networking/iptunnel.o: /root/arm/busybox-1.1.3/networking/libiproute/ip_common.h \
+   /root/arm/busybox-1.1.3/networking/libiproute/utils.h \
+   /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/networking/fakeidentd.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/networking/nameif.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/clean/up.h
+
+/root/arm/busybox-1.1.3/networking/interface.o: /root/arm/busybox-1.1.3/include/inet_common.h \
+   /root/arm/busybox-1.1.3/include/libbb.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/ipv6.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/clean/up.h
+
+/root/arm/busybox-1.1.3/networking/ipaddr.o: /root/arm/busybox-1.1.3/networking/libiproute/ip_common.h \
+   /root/arm/busybox-1.1.3/networking/libiproute/utils.h \
+   /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/networking/wget.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/wget/ip6/literal.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/wget/authentication.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/wget/statusbar.h
+
+/root/arm/busybox-1.1.3/networking/ip.o: /root/arm/busybox-1.1.3/networking/libiproute/ip_common.h \
+   /root/arm/busybox-1.1.3/networking/libiproute/utils.h \
+   /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/ip/tunnel.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/ip/route.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/ip/link.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/ip/address.h
+
+/root/arm/busybox-1.1.3/networking/nslookup.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/networking/tftp.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/tftp/debug.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/tftp/blocksize.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/tftp/put.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/tftp/get.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/clean/up.h
+
+/root/arm/busybox-1.1.3/networking/dnsd.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/networking/ifupdown.o: /root/arm/busybox-1.1.3/include/libbb.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/ifupdown/mapping.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/ifupdown/ipx.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/ifupdown/ipx.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/ifupdown/ipv6.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/ifupdown/ipv6.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/ifupdown/ipv4.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/ifupdown/ipv4.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/ifupdown/ip.h
+
+/root/arm/busybox-1.1.3/networking/ether-wake.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/networking/route.o: /root/arm/busybox-1.1.3/include/inet_common.h \
+   /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/ipv6.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/clean/up.h
+
+/root/arm/busybox-1.1.3/networking/telnetd.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/telnetd/inetd.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/ipv6.h \
+   /root/arm/busybox-1.1.3/include/config/config/login.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/devpts.h
+
+/root/arm/busybox-1.1.3/networking/nc.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/nc/gaping/security/hole.h
+
+/root/arm/busybox-1.1.3/networking/inetd.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/inetd/rpc.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/inetd/support/biltin/chargen.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/inetd/support/biltin/daytime.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/inetd/support/biltin/time.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/inetd/support/biltin/discard.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/inetd/support/biltin/echo.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/ipv6.h
+
+/root/arm/busybox-1.1.3/networking/zcip.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/networking/traceroute.o: /root/arm/busybox-1.1.3/include/inet_common.h \
+   /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/traceroute/use/icmp.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/traceroute/source/route.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/traceroute/verbose.h
+
+/root/arm/busybox-1.1.3/networking/hostname.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/clean/up.h
+
+/root/arm/busybox-1.1.3/networking/arping.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/networking/netstat.o: /root/arm/busybox-1.1.3/include/inet_common.h \
+   /root/arm/busybox-1.1.3/include/pwd_.h \
+   /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/route.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/ipv6.h
+
+/root/arm/busybox-1.1.3/networking/ftpgetput.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/ftpput.h \
+   /root/arm/busybox-1.1.3/include/config/config/ftpget.h
+
+/root/arm/busybox-1.1.3/networking/ping6.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/fancy/ping6.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/fancy/ping.h
+
+/root/arm/busybox-1.1.3/networking/httpd.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/skip/feature/httpd/encode/url/str.h \
+   /root/arm/busybox-1.1.3/include/config/use/feature/httpd/encode/url/str.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/httpd/encode/url/str.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/httpd/set/remote/port/to/env.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/httpd/config/with/script/interpr.h \
+   /root/arm/busybox-1.1.3/include/config/use/feature/httpd/cgi.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/httpd/cgi.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/httpd/cgi.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/httpd/config/with/mime/types.h \
+   /root/arm/busybox-1.1.3/include/config/skip/feature/httpd/setuid.h \
+   /root/arm/busybox-1.1.3/include/config/use/feature/httpd/setuid.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/httpd/setuid.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/httpd/reload/config/sighup.h \
+   /root/arm/busybox-1.1.3/include/config/skip/feature/httpd/auth/md5.h \
+   /root/arm/busybox-1.1.3/include/config/use/feature/httpd/auth/md5.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/httpd/auth/md5.h \
+   /root/arm/busybox-1.1.3/include/config/skip/feature/httpd/basic/auth.h \
+   /root/arm/busybox-1.1.3/include/config/use/feature/httpd/basic/auth.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/httpd/basic/auth.h \
+   /root/arm/busybox-1.1.3/include/config/skip/feature/httpd/usage/from/inetd/only.h \
+   /root/arm/busybox-1.1.3/include/config/use/feature/httpd/usage/from/inetd/only.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/httpd/usage/from/inetd/only.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/httpd/usage/from/inetd/only.h \
+   /root/arm/busybox-1.1.3/include/config/config/lfs.h
+
+/root/arm/busybox-1.1.3/networking/ifconfig.o: /root/arm/busybox-1.1.3/include/inet_common.h \
+   /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/ifconfig/broadcast/plus.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/ifconfig/hw.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/ifconfig/memstart/ioaddr/irq.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/ifconfig/slip.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/ifconfig/status.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/ipv6.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/clean/up.h
+
+/root/arm/busybox-1.1.3/networking/iplink.o: /root/arm/busybox-1.1.3/networking/libiproute/ip_common.h \
+   /root/arm/busybox-1.1.3/networking/libiproute/utils.h \
+   /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/networking/iproute.o: /root/arm/busybox-1.1.3/networking/libiproute/ip_common.h \
+   /root/arm/busybox-1.1.3/networking/libiproute/utils.h \
+   /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/networking/telnet.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/telnet/autologin.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/telnet/ttype.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/autowidth.h
+
+/root/arm/busybox-1.1.3/networking/ipcalc.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/ipcalc/fancy.h
+
+/root/arm/busybox-1.1.3/networking/vconfig.o: /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/networking/ping.o: /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/fancy/ping6.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/fancy/ping.h
+
+/root/arm/busybox-1.1.3/scripts/config/mconf.o: /root/arm/busybox-1.1.3/scripts/config/lkc.h \
+   /root/arm/busybox-1.1.3/scripts/config/lxdialog/dialog.h
+
+/root/arm/busybox-1.1.3/scripts/config/menu.o: /root/arm/busybox-1.1.3/scripts/config/lkc.h
+
+/root/arm/busybox-1.1.3/scripts/config/symbol.o: /root/arm/busybox-1.1.3/scripts/config/lkc.h
+
+/root/arm/busybox-1.1.3/scripts/config/util.o: /root/arm/busybox-1.1.3/scripts/config/lkc.h
+
+/root/arm/busybox-1.1.3/scripts/config/lkc.h: /root/arm/busybox-1.1.3/scripts/config/lkc_proto.h \
+   /root/arm/busybox-1.1.3/scripts/config/lkc_defs.h \
+   /root/arm/busybox-1.1.3/scripts/config/expr.h
+
+/root/arm/busybox-1.1.3/scripts/config/expr.o: /root/arm/busybox-1.1.3/scripts/config/lkc.h
+
+/root/arm/busybox-1.1.3/scripts/config/confdata.o: /root/arm/busybox-1.1.3/scripts/config/lkc.h
+
+/root/arm/busybox-1.1.3/scripts/config/conf.o: /root/arm/busybox-1.1.3/scripts/config/lkc.h
+
+/root/arm/busybox-1.1.3/scripts/config/zconf.tab.o: /root/arm/busybox-1.1.3/scripts/config/menu.c \
+   /root/arm/busybox-1.1.3/scripts/config/symbol.c \
+   /root/arm/busybox-1.1.3/scripts/config/expr.c \
+   /root/arm/busybox-1.1.3/scripts/config/confdata.c \
+   /root/arm/busybox-1.1.3/scripts/config/util.c \
+   /root/arm/busybox-1.1.3/scripts/config/lex.zconf.c \
+   /root/arm/busybox-1.1.3/scripts/config/lkc.h
+
+/root/arm/busybox-1.1.3/scripts/config/lex.zconf.o: /root/arm/busybox-1.1.3/scripts/config/lkc.h
+
+/root/arm/busybox-1.1.3/networking/udhcp/clientpacket.o: /root/arm/busybox-1.1.3/networking/udhcp/common.h \
+   /root/arm/busybox-1.1.3/networking/udhcp/dhcpc.h \
+   /root/arm/busybox-1.1.3/networking/udhcp/options.h \
+   /root/arm/busybox-1.1.3/networking/udhcp/clientpacket.h \
+   /root/arm/busybox-1.1.3/networking/udhcp/dhcpd.h
+
+/root/arm/busybox-1.1.3/networking/udhcp/options.h: /root/arm/busybox-1.1.3/networking/udhcp/packet.h
+
+/root/arm/busybox-1.1.3/networking/udhcp/arpping.o: /root/arm/busybox-1.1.3/networking/udhcp/arpping.h \
+   /root/arm/busybox-1.1.3/networking/udhcp/common.h \
+   /root/arm/busybox-1.1.3/networking/udhcp/dhcpd.h
+
+/root/arm/busybox-1.1.3/networking/udhcp/script.o: /root/arm/busybox-1.1.3/networking/udhcp/script.h \
+   /root/arm/busybox-1.1.3/networking/udhcp/common.h \
+   /root/arm/busybox-1.1.3/networking/udhcp/dhcpc.h \
+   /root/arm/busybox-1.1.3/networking/udhcp/options.h \
+   /root/arm/busybox-1.1.3/networking/udhcp/dhcpd.h
+
+/root/arm/busybox-1.1.3/networking/udhcp/pidfile.o: /root/arm/busybox-1.1.3/networking/udhcp/pidfile.h \
+   /root/arm/busybox-1.1.3/networking/udhcp/common.h
+
+/root/arm/busybox-1.1.3/networking/udhcp/packet.o: /root/arm/busybox-1.1.3/networking/udhcp/packet.h \
+   /root/arm/busybox-1.1.3/networking/udhcp/common.h \
+   /root/arm/busybox-1.1.3/networking/udhcp/options.h \
+   /root/arm/busybox-1.1.3/networking/udhcp/dhcpd.h
+
+/root/arm/busybox-1.1.3/networking/udhcp/leases.o: /root/arm/busybox-1.1.3/networking/udhcp/static_leases.h \
+   /root/arm/busybox-1.1.3/networking/udhcp/leases.h \
+   /root/arm/busybox-1.1.3/networking/udhcp/files.h \
+   /root/arm/busybox-1.1.3/networking/udhcp/arpping.h \
+   /root/arm/busybox-1.1.3/networking/udhcp/common.h \
+   /root/arm/busybox-1.1.3/networking/udhcp/options.h \
+   /root/arm/busybox-1.1.3/networking/udhcp/dhcpd.h
+
+/root/arm/busybox-1.1.3/networking/udhcp/clientpacket.h: /root/arm/busybox-1.1.3/networking/udhcp/packet.h
+
+/root/arm/busybox-1.1.3/networking/udhcp/static_leases.o: /root/arm/busybox-1.1.3/networking/udhcp/static_leases.h \
+   /root/arm/busybox-1.1.3/networking/udhcp/dhcpd.h
+
+/root/arm/busybox-1.1.3/networking/udhcp/dhcpc.o: /root/arm/busybox-1.1.3/networking/udhcp/signalpipe.h \
+   /root/arm/busybox-1.1.3/networking/udhcp/socket.h \
+   /root/arm/busybox-1.1.3/networking/udhcp/clientsocket.h \
+   /root/arm/busybox-1.1.3/networking/udhcp/script.h \
+   /root/arm/busybox-1.1.3/networking/udhcp/common.h \
+   /root/arm/busybox-1.1.3/networking/udhcp/dhcpc.h \
+   /root/arm/busybox-1.1.3/networking/udhcp/options.h \
+   /root/arm/busybox-1.1.3/networking/udhcp/clientpacket.h \
+   /root/arm/busybox-1.1.3/networking/udhcp/dhcpd.h
+
+/root/arm/busybox-1.1.3/networking/udhcp/dhcpd.o: /root/arm/busybox-1.1.3/networking/udhcp/serverpacket.h \
+   /root/arm/busybox-1.1.3/networking/udhcp/signalpipe.h \
+   /root/arm/busybox-1.1.3/networking/udhcp/socket.h \
+   /root/arm/busybox-1.1.3/networking/udhcp/static_leases.h \
+   /root/arm/busybox-1.1.3/networking/udhcp/files.h \
+   /root/arm/busybox-1.1.3/networking/udhcp/arpping.h \
+   /root/arm/busybox-1.1.3/networking/udhcp/common.h \
+   /root/arm/busybox-1.1.3/networking/udhcp/options.h \
+   /root/arm/busybox-1.1.3/networking/udhcp/dhcpd.h
+
+/root/arm/busybox-1.1.3/networking/udhcp/signalpipe.o: /root/arm/busybox-1.1.3/networking/udhcp/signalpipe.h \
+   /root/arm/busybox-1.1.3/networking/udhcp/common.h
+
+/root/arm/busybox-1.1.3/networking/udhcp/dhcpd.h: /root/arm/busybox-1.1.3/networking/udhcp/version.h \
+   /root/arm/busybox-1.1.3/networking/udhcp/libbb_udhcp.h \
+   /root/arm/busybox-1.1.3/networking/udhcp/leases.h
+
+/root/arm/busybox-1.1.3/networking/udhcp/static_leases.h: /root/arm/busybox-1.1.3/networking/udhcp/dhcpd.h
+
+/root/arm/busybox-1.1.3/networking/udhcp/serverpacket.o: /root/arm/busybox-1.1.3/networking/udhcp/serverpacket.h \
+   /root/arm/busybox-1.1.3/networking/udhcp/static_leases.h \
+   /root/arm/busybox-1.1.3/networking/udhcp/common.h \
+   /root/arm/busybox-1.1.3/networking/udhcp/options.h \
+   /root/arm/busybox-1.1.3/networking/udhcp/dhcpd.h
+
+/root/arm/busybox-1.1.3/networking/udhcp/libbb_udhcp.h: /root/arm/busybox-1.1.3/networking/udhcp/version.h \
+   /root/arm/busybox-1.1.3/include/busybox.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/udhcp/debug.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/udhcp/syslog.h \
+   /root/arm/busybox-1.1.3/include/config/config/install/no/usr.h
+
+/root/arm/busybox-1.1.3/networking/udhcp/files.o: /root/arm/busybox-1.1.3/networking/udhcp/static_leases.h \
+   /root/arm/busybox-1.1.3/networking/udhcp/files.h \
+   /root/arm/busybox-1.1.3/networking/udhcp/common.h \
+   /root/arm/busybox-1.1.3/networking/udhcp/options.h \
+   /root/arm/busybox-1.1.3/networking/udhcp/dhcpd.h
+
+/root/arm/busybox-1.1.3/networking/udhcp/dumpleases.o: /root/arm/busybox-1.1.3/networking/udhcp/libbb_udhcp.h \
+   /root/arm/busybox-1.1.3/networking/udhcp/leases.h \
+   /root/arm/busybox-1.1.3/networking/udhcp/dhcpd.h
+
+/root/arm/busybox-1.1.3/networking/udhcp/serverpacket.h: /root/arm/busybox-1.1.3/networking/udhcp/packet.h
+
+/root/arm/busybox-1.1.3/networking/udhcp/clientsocket.o: /root/arm/busybox-1.1.3/networking/udhcp/clientsocket.h \
+   /root/arm/busybox-1.1.3/networking/udhcp/common.h
+
+/root/arm/busybox-1.1.3/networking/udhcp/common.o: /root/arm/busybox-1.1.3/networking/udhcp/pidfile.h \
+   /root/arm/busybox-1.1.3/networking/udhcp/common.h
+
+/root/arm/busybox-1.1.3/networking/udhcp/socket.o: /root/arm/busybox-1.1.3/networking/udhcp/socket.h \
+   /root/arm/busybox-1.1.3/networking/udhcp/common.h
+
+/root/arm/busybox-1.1.3/networking/udhcp/options.o: /root/arm/busybox-1.1.3/networking/udhcp/files.h \
+   /root/arm/busybox-1.1.3/networking/udhcp/common.h \
+   /root/arm/busybox-1.1.3/networking/udhcp/options.h \
+   /root/arm/busybox-1.1.3/networking/udhcp/dhcpd.h
+
+/root/arm/busybox-1.1.3/networking/udhcp/common.h: /root/arm/busybox-1.1.3/networking/udhcp/version.h \
+   /root/arm/busybox-1.1.3/networking/udhcp/libbb_udhcp.h
+
+/root/arm/busybox-1.1.3/networking/libiproute/iptunnel.o: /root/arm/busybox-1.1.3/networking/libiproute/rt_names.h \
+   /root/arm/busybox-1.1.3/networking/libiproute/ip_common.h \
+   /root/arm/busybox-1.1.3/networking/libiproute/utils.h \
+   /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/networking/libiproute/rtm_map.o: /root/arm/busybox-1.1.3/networking/libiproute/rt_names.h \
+   /root/arm/busybox-1.1.3/networking/libiproute/utils.h
+
+/root/arm/busybox-1.1.3/networking/libiproute/utils.o: /root/arm/busybox-1.1.3/networking/libiproute/utils.h \
+   /root/arm/busybox-1.1.3/include/inet_common.h \
+   /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/networking/libiproute/ll_addr.o: /root/arm/busybox-1.1.3/networking/libiproute/utils.h \
+   /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/networking/libiproute/ll_map.o: /root/arm/busybox-1.1.3/networking/libiproute/ll_map.h \
+   /root/arm/busybox-1.1.3/networking/libiproute/libnetlink.h
+
+/root/arm/busybox-1.1.3/networking/libiproute/utils.h: /root/arm/busybox-1.1.3/networking/libiproute/rtm_map.h \
+   /root/arm/busybox-1.1.3/networking/libiproute/ll_map.h \
+   /root/arm/busybox-1.1.3/networking/libiproute/libnetlink.h \
+   /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/networking/libiproute/rt_names.o: /root/arm/busybox-1.1.3/networking/libiproute/rt_names.h
+
+/root/arm/busybox-1.1.3/networking/libiproute/ipaddress.o: /root/arm/busybox-1.1.3/networking/libiproute/rt_names.h \
+   /root/arm/busybox-1.1.3/networking/libiproute/ip_common.h \
+   /root/arm/busybox-1.1.3/networking/libiproute/utils.h \
+   /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/networking/libiproute/iplink.o: /root/arm/busybox-1.1.3/networking/libiproute/rt_names.h \
+   /root/arm/busybox-1.1.3/networking/libiproute/ip_common.h \
+   /root/arm/busybox-1.1.3/networking/libiproute/utils.h \
+   /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/networking/libiproute/iproute.o: /root/arm/busybox-1.1.3/networking/libiproute/rt_names.h \
+   /root/arm/busybox-1.1.3/networking/libiproute/utils.h \
+   /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/networking/libiproute/ip_parse_common_args.o: /root/arm/busybox-1.1.3/networking/libiproute/ip_common.h \
+   /root/arm/busybox-1.1.3/networking/libiproute/utils.h \
+   /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/networking/libiproute/ll_proto.o: /root/arm/busybox-1.1.3/networking/libiproute/utils.h
+
+/root/arm/busybox-1.1.3/networking/libiproute/libnetlink.o: /root/arm/busybox-1.1.3/networking/libiproute/libnetlink.h \
+   /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/archival/libunarchive/data_extract_to_buffer.o: /root/arm/busybox-1.1.3/include/unarchive.h \
+   /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/archival/libunarchive/data_skip.o: /root/arm/busybox-1.1.3/include/unarchive.h \
+   /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/archival/libunarchive/get_header_cpio.o: /root/arm/busybox-1.1.3/include/unarchive.h \
+   /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/archival/libunarchive/unpack_ar_archive.o: /root/arm/busybox-1.1.3/include/unarchive.h \
+   /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/archival/libunarchive/data_extract_to_stdout.o: /root/arm/busybox-1.1.3/include/unarchive.h
+
+/root/arm/busybox-1.1.3/archival/libunarchive/get_header_ar.o: /root/arm/busybox-1.1.3/include/unarchive.h \
+   /root/arm/busybox-1.1.3/include/libbb.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/ar/long/filenames.h
+
+/root/arm/busybox-1.1.3/archival/libunarchive/decompress_bunzip2.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/archival/libunarchive/rangecoder.h: /root/arm/busybox-1.1.3/include/libbb.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/lzma/fast.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/clean/up.h
+
+/root/arm/busybox-1.1.3/archival/libunarchive/init_handle.o: /root/arm/busybox-1.1.3/include/unarchive.h \
+   /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/archival/libunarchive/check_header_gzip.o: /root/arm/busybox-1.1.3/include/unarchive.h \
+   /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/archival/libunarchive/get_header_tar_lzma.o: /root/arm/busybox-1.1.3/include/unarchive.h
+
+/root/arm/busybox-1.1.3/archival/libunarchive/open_transformer.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/archival/libunarchive/header_list.o: /root/arm/busybox-1.1.3/include/unarchive.h
+
+/root/arm/busybox-1.1.3/archival/libunarchive/data_align.o: /root/arm/busybox-1.1.3/include/unarchive.h \
+   /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/archival/libunarchive/header_verbose_list.o: /root/arm/busybox-1.1.3/include/unarchive.h \
+   /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/archival/libunarchive/archive_xread_all.o: /root/arm/busybox-1.1.3/include/unarchive.h \
+   /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/archival/libunarchive/get_header_tar.o: /root/arm/busybox-1.1.3/include/unarchive.h \
+   /root/arm/busybox-1.1.3/include/libbb.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/tar/gnu/extensions.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/tar/oldgnu/compatability.h
+
+/root/arm/busybox-1.1.3/archival/libunarchive/filter_accept_list.o: /root/arm/busybox-1.1.3/include/unarchive.h
+
+/root/arm/busybox-1.1.3/archival/libunarchive/decompress_uncompress.o: /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/archival/libunarchive/get_header_tar_bz2.o: /root/arm/busybox-1.1.3/include/unarchive.h \
+   /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/archival/libunarchive/seek_by_jump.o: /root/arm/busybox-1.1.3/include/unarchive.h \
+   /root/arm/busybox-1.1.3/include/libbb.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/unarchive/tape.h
+
+/root/arm/busybox-1.1.3/archival/libunarchive/seek_by_char.o: /root/arm/busybox-1.1.3/include/unarchive.h \
+   /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/archival/libunarchive/header_skip.o: /root/arm/busybox-1.1.3/include/unarchive.h
+
+/root/arm/busybox-1.1.3/archival/libunarchive/filter_accept_reject_list.o: /root/arm/busybox-1.1.3/include/unarchive.h
+
+/root/arm/busybox-1.1.3/archival/libunarchive/archive_xread_all_eof.o: /root/arm/busybox-1.1.3/include/unarchive.h \
+   /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/archival/libunarchive/decompress_unzip.o: /root/arm/busybox-1.1.3/include/unarchive.h \
+   /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/archival/libunarchive/decompress_unlzma.o: /root/arm/busybox-1.1.3/archival/libunarchive/rangecoder.h \
+   /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/archival/libunarchive/filter_accept_list_reassign.o: /root/arm/busybox-1.1.3/include/unarchive.h \
+   /root/arm/busybox-1.1.3/include/libbb.h \
+   /root/arm/busybox-1.1.3/include/config/enable/feature/deb/tar/lzma.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/deb/tar/bz2.h \
+   /root/arm/busybox-1.1.3/include/config/config/feature/deb/tar/gz.h
+
+/root/arm/busybox-1.1.3/archival/libunarchive/data_extract_all.o: /root/arm/busybox-1.1.3/include/unarchive.h \
+   /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/archival/libunarchive/find_list_entry.o: /root/arm/busybox-1.1.3/include/unarchive.h
+
+/root/arm/busybox-1.1.3/archival/libunarchive/filter_accept_all.o: /root/arm/busybox-1.1.3/include/unarchive.h
+
+/root/arm/busybox-1.1.3/archival/libunarchive/get_header_tar_gz.o: /root/arm/busybox-1.1.3/include/unarchive.h \
+   /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/coreutils/libcoreutils/cp_mv_stat.o: /root/arm/busybox-1.1.3/coreutils/libcoreutils/coreutils.h \
+   /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/coreutils/libcoreutils/getopt_mk_fifo_nod.o: /root/arm/busybox-1.1.3/coreutils/libcoreutils/coreutils.h \
+   /root/arm/busybox-1.1.3/include/libbb.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/read_bb_file.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fs.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/bitmaps.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fs.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/test_io.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fs.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/bmove.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fsP.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/getsize.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fs.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h \
+   /root/arm/busybox-1.1.3/include/config/config/lfs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/alloc_tables.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fs.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/expanddir.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fs.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/bmap.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fs.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fs.h: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/bitops.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_err.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_io.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_types.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/dupfs.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fsP.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/kernel-jbd.h: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/jfs_compat.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/badblocks.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fsP.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/getsectsize.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fs.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h \
+   /root/arm/busybox-1.1.3/include/config/config/lfs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/inode_io.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fs.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/bb_compat.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fsP.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/valid_blk.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fs.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/newdir.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fs.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/namei.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fs.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/openfs.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/e2image.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fs.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/inode.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/e2image.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fsP.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/bitops.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fs.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/initialize.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fs.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/icount.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fs.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/bb_inode.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fs.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/rw_bitmaps.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/e2image.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fs.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/freefs.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fsP.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/inline.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fs.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/dirhash.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fs.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/flushb.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fs.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/version.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fs.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/res_gdt.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fs.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/get_pathname.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fs.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/dirblock.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fs.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext_attr.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_ext_attr.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fs.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/block.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fs.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/write_bb_file.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fs.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/unlink.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fs.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/io_manager.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fs.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/brel_ma.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/brel.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fs.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/mkjournal.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/jfs_user.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fs.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/e2p/e2p.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ismounted.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fs.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/irel_ma.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/irel.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fs.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fs_inline.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/bitops.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/check_desc.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fs.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/dblist_dir.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fsP.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_types.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/rs_bitmap.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fs.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/jfs_user.h: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/kernel-jbd.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/dir_iterate.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fsP.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/closefs.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fsP.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/cmp_bitmaps.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fs.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fsP.h: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/swapfs.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_ext_attr.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fs.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/imager.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fs.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/gen_bitmap.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fs.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/mkdir.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fs.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/fileio.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fs.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/alloc_stats.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fs.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/lookup.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fs.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/unix_io.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fs.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h \
+   /root/arm/busybox-1.1.3/include/config/config/lfs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/alloc_sb.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fs.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_io.h: /root/arm/busybox-1.1.3/include/config/config/lfs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/read_bb.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fs.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/finddev.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fs.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/dblist.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fsP.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ind_block.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fs.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/jfs_compat.h: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/kernel-list.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/alloc.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fs.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/link.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fs.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/ext2fs/sparse.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2fsP.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/uuid/gen_uuid.o: /root/arm/busybox-1.1.3/e2fsprogs/uuid/uuidP.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/uuid/pack.o: /root/arm/busybox-1.1.3/e2fsprogs/uuid/uuidP.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/uuid/uuid_time.o: /root/arm/busybox-1.1.3/e2fsprogs/uuid/uuidP.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/uuid/unpack.o: /root/arm/busybox-1.1.3/e2fsprogs/uuid/uuidP.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/uuid/compare.o: /root/arm/busybox-1.1.3/e2fsprogs/uuid/uuidP.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/uuid/parse.o: /root/arm/busybox-1.1.3/e2fsprogs/uuid/uuidP.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/uuid/uuidP.h: /root/arm/busybox-1.1.3/e2fsprogs/uuid/uuid.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/uuid/unparse.o: /root/arm/busybox-1.1.3/e2fsprogs/uuid/uuidP.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/e2p/ostype.o: /root/arm/busybox-1.1.3/e2fsprogs/e2p/e2p.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/e2p/ls.o: /root/arm/busybox-1.1.3/e2fsprogs/e2p/e2p.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/e2p/fgetsetflags.o: /root/arm/busybox-1.1.3/e2fsprogs/e2p/e2p.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/e2p/ps.o: /root/arm/busybox-1.1.3/e2fsprogs/e2p/e2p.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/e2p/fgetsetversion.o: /root/arm/busybox-1.1.3/e2fsprogs/e2p/e2p.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/e2p/mntopts.o: /root/arm/busybox-1.1.3/e2fsprogs/e2p/e2p.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/e2p/pe.o: /root/arm/busybox-1.1.3/e2fsprogs/e2p/e2p.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/e2p/pf.o: /root/arm/busybox-1.1.3/e2fsprogs/e2p/e2p.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/e2p/uuid.o: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_types.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/e2p/e2p.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/e2p/parse_num.o: /root/arm/busybox-1.1.3/e2fsprogs/e2p/e2p.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/e2p/e2p.h: /root/arm/busybox-1.1.3/e2fsprogs/ext2fs/ext2_fs.h \
+   /root/arm/busybox-1.1.3/include/busybox.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/e2p/feature.o: /root/arm/busybox-1.1.3/e2fsprogs/e2p/e2p.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/e2p/iod.o: /root/arm/busybox-1.1.3/e2fsprogs/e2p/e2p.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/e2p/hashstr.o: /root/arm/busybox-1.1.3/e2fsprogs/e2p/e2p.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/blkid/devname.o: /root/arm/busybox-1.1.3/e2fsprogs/blkid/blkidP.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/blkid/dev.o: /root/arm/busybox-1.1.3/e2fsprogs/blkid/blkidP.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/blkid/save.o: /root/arm/busybox-1.1.3/e2fsprogs/blkid/blkidP.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/blkid/blkid_getsize.o: /root/arm/busybox-1.1.3/e2fsprogs/blkid/blkidP.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/blkid/resolve.o: /root/arm/busybox-1.1.3/e2fsprogs/blkid/probe.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/blkid/blkidP.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/blkid/cache.o: /root/arm/busybox-1.1.3/e2fsprogs/blkid/blkidP.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/blkid/version.o: /root/arm/busybox-1.1.3/e2fsprogs/blkid/blkid.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/blkid/probe.o: /root/arm/busybox-1.1.3/e2fsprogs/blkid/probe.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/blkid/blkidP.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/uuid/uuid.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/blkid/blkidP.h: /root/arm/busybox-1.1.3/e2fsprogs/blkid/list.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/blkid/blkid.h \
+   /root/arm/busybox-1.1.3/include/config/config/lfs.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/blkid/devno.o: /root/arm/busybox-1.1.3/e2fsprogs/blkid/blkidP.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/blkid/read.o: /root/arm/busybox-1.1.3/e2fsprogs/blkid/blkidP.h \
+   /root/arm/busybox-1.1.3/e2fsprogs/uuid/uuid.h
+
+/root/arm/busybox-1.1.3/e2fsprogs/blkid/tag.o: /root/arm/busybox-1.1.3/e2fsprogs/blkid/blkidP.h
+
+/root/arm/busybox-1.1.3/scripts/config/lxdialog/inputbox.o: /root/arm/busybox-1.1.3/scripts/config/lxdialog/dialog.h
+
+/root/arm/busybox-1.1.3/scripts/config/lxdialog/msgbox.o: /root/arm/busybox-1.1.3/scripts/config/lxdialog/dialog.h
+
+/root/arm/busybox-1.1.3/scripts/config/lxdialog/checklist.o: /root/arm/busybox-1.1.3/scripts/config/lxdialog/dialog.h
+
+/root/arm/busybox-1.1.3/scripts/config/lxdialog/menubox.o: /root/arm/busybox-1.1.3/scripts/config/lxdialog/dialog.h
+
+/root/arm/busybox-1.1.3/scripts/config/lxdialog/textbox.o: /root/arm/busybox-1.1.3/scripts/config/lxdialog/dialog.h
+
+/root/arm/busybox-1.1.3/scripts/config/lxdialog/util.o: /root/arm/busybox-1.1.3/scripts/config/lxdialog/colors.h \
+   /root/arm/busybox-1.1.3/scripts/config/lxdialog/dialog.h
+
+/root/arm/busybox-1.1.3/scripts/config/lxdialog/yesno.o: /root/arm/busybox-1.1.3/scripts/config/lxdialog/dialog.h

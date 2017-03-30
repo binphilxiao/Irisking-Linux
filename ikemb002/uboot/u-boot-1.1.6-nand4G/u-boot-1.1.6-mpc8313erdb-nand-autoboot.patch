@@ -1,0 +1,107 @@
+From 88907b88b232bbf4bf4e9f9947f33749b9b41405 Mon Sep 17 00:00:00 2001
+From: tanya <tanya.jiang@test.net>
+Date: Tue, 3 Apr 2007 15:30:33 +0800
+Subject: [PATCH] Add new fixup for REVA nand /autoboot cmd/ code cleanup
+
+---
+ board/mpc8313erdb/config.mk     |    2 +-
+ board/mpc8313erdb/mpc8313erdb.c |   25 ++++++++++++++++++++++---
+ include/configs/MPC8313ERDB.h   |    6 ++++--
+ 3 files changed, 27 insertions(+), 6 deletions(-)
+
+diff --git a/board/mpc8313erdb/config.mk b/board/mpc8313erdb/config.mk
+index a1eb279..c10e810 100644
+--- a/board/mpc8313erdb/config.mk
++++ b/board/mpc8313erdb/config.mk
+@@ -22,7 +22,7 @@
+ #
+ 
+ #
+-# MPC8313EMDS
++# MPC8313ERDB
+ #
+ 
+ TEXT_BASE  =   0xFE000000
+diff --git a/board/mpc8313erdb/mpc8313erdb.c b/board/mpc8313erdb/mpc8313erdb.c
+index be02e51..ce447b3 100644
+--- a/board/mpc8313erdb/mpc8313erdb.c
++++ b/board/mpc8313erdb/mpc8313erdb.c
+@@ -1,8 +1,11 @@
+ /*
+- * Copyright (C) Freescale Semiconductor, Inc. 2006. 
++ * Copyright (C) Freescale Semiconductor, Inc. 2006-2007. 
+  * 
+  * Initialized by Nick.Spence@freescale.com
+  *                Wilson.Lo@freescale.com
++ * ChangeLog
++ * 200700402	Tanya Jiang (tanya.jiang@freescale.com)
++ *		Add fixup for NAND on REVA and REVA1 board
+  *
+  * See file CREDITS for list of people who contributed to this
+  * project.
+@@ -130,15 +133,31 @@ int fixed_sdram(void)
+ int checkboard(void)
+ {
+ 	uint*	led_ptr;
++	volatile immap_t *im = (immap_t *) CFG_IMMR;
++
+ 	puts("Board: Freescale MPC8313ERDB\n");
+ 	
+ 	led_ptr = (uint*) (0xFA000000);
++
++	/* fixup for MPC8313ERDB REVA board, ORx[FCM_BCTLD] need to be set;
++	 * the default value of CFG_ORi_PRELIM[FCM_BCTLD] is clear
++	 * that is ok for REVA1 and REVA2 board to identify NAND device
++	 * SW4.3[REVA] 0 stands for REVA
++	 * SW4.3[REVA] 1 stands for REVA1/REVA2
++	 */
++	if ( (*led_ptr & 0x1) == 0) {
++#if defined(CFG_NAND_OR_PRELIM) && defined(CFG_NAND_BR_PRELIM)
++#if !defined(CONFIG_NAND_U_BOOT ) 
++	im->lbus.bank[1].or = CFG_NAND_OR_PRELIM | OR_FCM_BCTLD;
++#else
++#warning CONFIG_NAND_U_BOOT will not work on MPC8313ERDB REVA board
++#endif
++#endif
++	}
+ 	*led_ptr = 0x00000000;
+ 
+ 	return 0;
+ }
+-
+-
+ #if defined(CONFIG_OF_FLAT_TREE) && defined(CONFIG_OF_BOARD_SETUP)
+ 
+ extern void ft_cpu_setup(void *blob, bd_t *bd);
+diff --git a/include/configs/MPC8313ERDB.h b/include/configs/MPC8313ERDB.h
+index bd9c129..addc682 100644
+--- a/include/configs/MPC8313ERDB.h
++++ b/include/configs/MPC8313ERDB.h
+@@ -232,14 +232,14 @@
+ 				| BR_MS_FCM          /* MSEL = FCM */ \
+ 				| BR_V )             /* valid */
+ #define CFG_OR1_PRELIM		( 0xFFFF8000	/* length 32K */ \
+-				| OR_FCM_BCTLD \
+ 				| OR_FCM_CSCT \
+ 				| OR_FCM_CST \
+ 				| OR_FCM_CHT \
+ 				| OR_FCM_SCY_1 \
+ 				| OR_FCM_TRLX \
+ 				| OR_FCM_EHTR )
+-				/* 0xFFFF8396 */
++				/* 0xFFFF8396 for REVA1/REVA2 board, 
++				 * will be fixed to 0xFFFF9396 for REVA board */
+ #define CFG_LBLAWBAR1_PRELIM	CFG_NAND_BASE
+ #define CFG_LBLAWAR1_PRELIM	0x8000000E	/* 32KB  */
+ 
+@@ -619,5 +619,7 @@
+ 	"burn_vscfw=run load_vscfw; run update_vscfw\0"				\
+ 	"run_vscld=tftp 40000 /tftpboot/vsc7385_load.bin;" 			\
+ 			"go 40004 \0"						\
++	"run_vscld1=cp.b fe710000 40000 11000; go 40004 \0"			\
+ 	""
++#define CONFIG_BOOTCOMMAND	"run run_vscld1; run ramargs addtty;bootm fe100000 fe300000 fe700000"
+ #endif	/* __CONFIG_H */
+-- 
+1.5.0
+

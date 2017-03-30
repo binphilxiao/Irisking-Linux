@@ -1,0 +1,1 @@
+cmd_shell/lib.a := rm -f shell/lib.a; /opt/crosstool/gcc-4.1.0-glibc-2.3.6/powerpc-603-linux-gnu/bin/powerpc-603-linux-gnu-ar  rcs shell/lib.a shell/ash.o shell/ash_ptr_hack.o shell/cttyhack.o shell/hush.o shell/msh.o

@@ -1,0 +1,164 @@
+From a1454986d00b01afd43f45afcb6019c389850bf2 Mon Sep 17 00:00:00 2001
+From: lil <tony.li@freescale.com>
+Date: Wed, 18 Apr 2007 16:58:31 +0800
+Subject: [PATCH] Core/CSB frequence and SGMII make options
+
+---
+ Makefile                      |   15 +++++++++++
+ include/configs/MPC8313ERDB.h |   55 ++++++++++++++++++++++++++++++++++++++---
+ 2 files changed, 71 insertions(+), 4 deletions(-)
+
+diff --git a/Makefile b/Makefile
+index e801c73..f7060d8 100644
+--- a/Makefile
++++ b/Makefile
+@@ -1622,6 +1622,10 @@ MPC8349ITX_config:	unconfig
+ 	@$(MKCONFIG) $(@:_config=) ppc mpc83xx mpc8349itx
+ 
+ MPC8313ERDB_config \
++MPC8313ERDB_266_133_config \
++MPC8313ERDB_400_133_config \
++MPC8313ERDB_sgmii_etsec2_config \
++MPC8313ERDB_pm_config \
+ MPC8313ERDB_NAND_config:	unconfig
+ 	@mkdir -p $(obj)include
+ 	@mkdir -p $(obj)nand_spl
+@@ -1630,6 +1634,24 @@ MPC8313ERDB_NAND_config:	unconfig
+ 	if [ "$(findstring _NAND_,$@)" ] ; then \
+ 		echo -n "... NAND " ; \
+ 		echo "#define CONFIG_NAND_U_BOOT" >> $(obj)include/config.h ; \
++	fi ; \
++	if [ "$(findstring _sgmii_,$@)" ] ; then \
++		echo -n "...SGMII for eTSEC2..." ; \
++		echo "#define CONFIG_SGMII_ETSEC2" >>include/config.h ; \
++		echo -n "...CSB 133M CORE 266M..." ; \
++		echo "#define CONFIG_133M_266M" >>include/config.h ; \
++	fi ; \
++	if [ "$(findstring _266_,$@)" ] ; then \
++		echo -n "...CSB 133M CORE 266M..." ; \
++		echo "#define CONFIG_133M_266M" >>include/config.h ; \
++	fi ; \
++	if [ "$(findstring _400_,$@)" ] ; then \
++		echo -n "...CSB 133M CORE 400M..." ; \
++		echo "#define CONFIG_133M_400M" >>include/config.h ; \
++	fi ; \
++	if [ "$(findstring _pm_,$@)" ] ; then \
++		echo -n "...Power Management..." ; \
++		echo "#define CONFIG_PM" >>include/config.h ; \
+ 	fi ;
+ 	@$(MKCONFIG) -a MPC8313ERDB ppc mpc83xx mpc8313erdb;\
+ 	if [ "$(findstring _NAND_,$@)" ] ; then \
+diff --git a/include/configs/MPC8313ERDB.h b/include/configs/MPC8313ERDB.h
+index 3e5e197..478a04e 100644
+--- a/include/configs/MPC8313ERDB.h
++++ b/include/configs/MPC8313ERDB.h
+@@ -44,7 +44,6 @@
+ 
+ #define CONFIG_PCI
+ 
+-#define PCI_66M				/* default */
+ #ifdef PCI_66M
+ #define CONFIG_83XX_CLKIN	66666666	/* in Hz */
+ #else
+@@ -213,7 +212,16 @@
+ /*
+  * Local Bus LCRR and LBCR regs
+  */
++#ifdef PCI_66M
++#define CFG_LCRR	LCRR_EADC_1 | LCRR_CLKDIV_2	/* 0x00010002 */
++#else
++#if defined(CONFIG_133M_266M) || defined(CONFIG_133M_400M)
+ #define CFG_LCRR	LCRR_EADC_1 | LCRR_CLKDIV_2	/* 0x00010002 */
++#else
++#define CFG_LCRR	LCRR_EADC_1 | LCRR_CLKDIV_4	/* 0x00010004 */
++#endif
++#endif
++
+ #define CFG_LBC_LBCR	( 0x00040000 /* TODO */ \
+ 			| (0xFF << LBCR_BMT_SHIFT) \
+ 			| 0xF )	/* 0x0004ff0f */
+@@ -528,24 +536,46 @@
+ 	HRCWL_CSB_TO_CLKIN_2X1 |\
+ 	HRCWL_CORE_TO_CSB_2X1)
+ #else
+-#if 1 /* 33MHz IN, 166MHz CSB, 333 DDR, 333 CORE */
++#if defined(CONFIG_133M_266M) /* 33MHz IN, 133MHz CSB, 266 DDR, 266 CORE */
+ #define CFG_HRCW_LOW (\
+ 	HRCWL_LCL_BUS_TO_SCB_CLK_1X1 |\
+ 	HRCWL_INIT |\
+ 	HRCWL_DDR_TO_SCB_CLK_2X1 |\
+-	HRCWL_CSB_TO_CLKIN_5X1 |\
++	HRCWL_CSB_TO_CLKIN_4X1 |\
+ 	HRCWL_CORE_TO_CSB_2X1)
+-#else /* 33MHz IN, 133MHz CSB, 266 DDR, 266 CORE */
++#elif defined(CONFIG_133M_400M) /* 33MHz IN, 133MHz CSB, 266 DDR, 400 CORE */
+ #define CFG_HRCW_LOW (\
+ 	HRCWL_LCL_BUS_TO_SCB_CLK_1X1 |\
+ 	HRCWL_INIT |\
+ 	HRCWL_DDR_TO_SCB_CLK_2X1 |\
+ 	HRCWL_CSB_TO_CLKIN_4X1 |\
++	HRCWL_CORE_TO_CSB_3X1)
++#else /* 33MHz IN, 166MHz CSB, 333 DDR, 333 CORE */
++#define CFG_HRCW_LOW (\
++	HRCWL_LCL_BUS_TO_SCB_CLK_1X1 |\
++	HRCWL_INIT |\
++	HRCWL_DDR_TO_SCB_CLK_2X1 |\
++	HRCWL_CSB_TO_CLKIN_5X1 |\
+ 	HRCWL_CORE_TO_CSB_2X1)
+ #endif
+ #endif /* PCI_66M */
+ 
+ #ifdef CONFIG_NAND_SPL
++#ifdef CONFIG_SGMII_ETSEC2
++#define CFG_HRCW_HIGH (\
++	HRCWH_PCI_HOST |\
++	HRCWH_PCI1_ARBITER_ENABLE |\
++	HRCWH_CORE_ENABLE |\
++	HRCWH_FROM_0XFFF00100 |\
++	HRCWH_BOOTSEQ_DISABLE |\
++	HRCWH_SW_WATCHDOG_DISABLE |\
++	HRCWH_ROM_LOC_NAND_SP_8BIT |\
++	HRCWH_RL_EXT_NAND |\
++	HRCWH_TSEC1M_IN_RGMII |\
++	HRCWH_TSEC2M_IN_SGMII |\
++	HRCWH_BIG_ENDIAN |\
++	HRCWH_LALE_NORMAL)
++#else
+ #define CFG_HRCW_HIGH (\
+ 	HRCWH_PCI_HOST |\
+ 	HRCWH_PCI1_ARBITER_ENABLE |\
+@@ -559,7 +589,23 @@
+ 	HRCWH_TSEC2M_IN_RGMII |\
+ 	HRCWH_BIG_ENDIAN |\
+ 	HRCWH_LALE_NORMAL)
++#endif
+ #else /* HRCWH: 0xa0606C00 */
++#ifdef CONFIG_SGMII_ETSEC2
++#define CFG_HRCW_HIGH (\
++	HRCWH_PCI_HOST |\
++	HRCWH_PCI1_ARBITER_ENABLE |\
++	HRCWH_CORE_ENABLE |\
++	HRCWH_FROM_0X00000100 |\
++	HRCWH_BOOTSEQ_DISABLE |\
++	HRCWH_SW_WATCHDOG_DISABLE |\
++	HRCWH_ROM_LOC_LOCAL_16BIT |\
++	HRCWH_RL_EXT_LEGACY |\
++	HRCWH_TSEC1M_IN_RGMII |\
++	HRCWH_TSEC2M_IN_SGMII |\
++	HRCWH_BIG_ENDIAN |\
++	HRCWH_LALE_NORMAL)
++#else
+ #define CFG_HRCW_HIGH (\
+ 	HRCWH_PCI_HOST |\
+ 	HRCWH_PCI1_ARBITER_ENABLE |\
+@@ -574,6 +620,7 @@
+ 	HRCWH_BIG_ENDIAN |\
+ 	HRCWH_LALE_NORMAL)
+ #endif
++#endif
+ /* System IO Config */
+ #define CFG_SICRH	(SICRH_TSOBI1 | SICRH_TSOBI2) /* RGMII */
+ #define CFG_SICRL	SICRL_USBDR /* Enable Internal USB Phy  */
+-- 
+1.5.0
+

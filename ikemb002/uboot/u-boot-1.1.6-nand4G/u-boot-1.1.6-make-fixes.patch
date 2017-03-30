@@ -1,0 +1,15 @@
+diff --exclude CVS -uNr u-boot-1.1.6/examples/vsc7385_load/Makefile u-boot-1.1.6.modified/examples/vsc7385_load/Makefile
+--- u-boot-1.1.6/examples/vsc7385_load/Makefile	2007-06-11 13:37:43.000000000 -0400
++++ u-boot-1.1.6.modified/examples/vsc7385_load/Makefile	2007-06-09 10:52:27.000000000 -0400
+@@ -81,10 +81,11 @@
+ 	$(LD) -g $(EX_LDFLAGS) -Ttext $(LOAD_ADDR) \
+ 		-o $(PROGNAME) -e main $< $(SUBSRCS:=.o) $(LIB) \
+ 		-Map $(PROGNAME).map -L$(gcclibdir) -lgcc
+-
++$(SREC):
+ %.srec:	%
+ 	$(OBJCOPY) -O srec $(PROGNAME) $(PROGNAME).srec 2>/dev/null
+ 
++$(BIN):
+ %.bin:	%
+ 	$(OBJCOPY) -O binary $(PROGNAME) $(PROGNAME).bin 2>/dev/null

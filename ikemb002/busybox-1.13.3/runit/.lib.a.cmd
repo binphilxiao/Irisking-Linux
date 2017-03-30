@@ -1,0 +1,1 @@
+cmd_runit/lib.a := rm -f runit/lib.a; /opt/crosstool/gcc-4.1.0-glibc-2.3.6/powerpc-603-linux-gnu/bin/powerpc-603-linux-gnu-ar  rcs runit/lib.a runit/chpst.o runit/runit_lib.o runit/runsv.o runit/runsvdir.o runit/sv.o runit/svlogd.o
